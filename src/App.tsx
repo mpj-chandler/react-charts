@@ -4,6 +4,6 @@ interface AppProps {
 
 }
 
-const App: React.FC<AppProps> = (props) => <div {...props}>I love Jenny Wong very very much</div>;
+const App: React.FC<AppProps> = (props) => <div {...props}>React Charts</div>;
 
 export default App;
