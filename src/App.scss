@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: calc(12px + 0.5vw);
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 'title title' 'top-left top-right' 'bottom-left bottom-right';
+  grid-template-rows: 10vh 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  &__Title {
+    grid-area: title;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__ChartContainer {
+    text-align: center;
+    grid-area: top-left;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    align-content: center;
+  }
+}
