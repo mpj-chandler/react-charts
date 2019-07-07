@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './BarChart.scss';
+import XAxis from '../XAxis/XAxis';
 
 interface SeriesData {
     seriesName: string;
@@ -17,7 +18,7 @@ const BarChart: React.FC<BarChartProps> = (props) => {
             <div className={styles.BarChart__title}>{props.title}</div>
             <div className={styles.BarChart__yAxis}>yAxis</div>
             <div className={styles.BarChart__blank}>()</div>
-            <div className={styles.BarChart__xAxis}>xAxis</div>
+            <XAxis range={{ min: 0, max: 100 }}/>
         </div>
     )
 }

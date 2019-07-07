@@ -19,6 +19,7 @@
     "@types/html-webpack-plugin": "^3.2.0",
     "@types/jest": "^24.0.15",
     "@types/react": "^16.8.23",
+    "@types/react-test-renderer": "^16.8.2",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-dev-expression": "^0.2.1",
@@ -32,13 +33,16 @@
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-standard": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
     "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.6.0",
     "react-hot-loader": "^4.12.3",
+    "react-test-renderer": "^16.8.6",
     "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.4",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.5.2",
     "url-loader": "^2.0.1",
     "webpack-cli": "^3.3.5"
@@ -60,6 +64,29 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
     "bundle": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch --coverage"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sss|styl)$": "cssTransform.js"
+    },
+    "moduleDirectories": ["node_modules"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "d.ts"
+    ],
+    "testMatch": [
+      "**/?(*.)test.ts?(x)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!**/*.d.ts",
+      "!node_modules/**/*",
+      "!**/index.tsx"
+    ]
   }
 }
