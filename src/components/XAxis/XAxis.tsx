@@ -11,7 +11,7 @@ const XAxis: React.FC<XAxisProps> = (props) => {
     const renderTicks: (props: XAxisProps) => JSX.Element = (props) => {
         const tickLabels: string[] = [];
         const interval = props.range.max - props.range.min;
-        const increment = 0.9 * (interval / props.numTicks);
+        const increment = (interval / props.numTicks);
 
         for (let i=0; i<=props.numTicks; i++) {
             tickLabels.push(`${props.range.min + (i * increment)}`)
@@ -19,7 +19,14 @@ const XAxis: React.FC<XAxisProps> = (props) => {
 
         return (
             <g className={styles.XAxis__Ticks}>
-                {tickLabels.map((label: string, index: number) => <line x1={`${5 + (index * increment)}%`} y1={'50%'} x2={`${5 + (index * increment)}%`} y2={'60%'} stroke={'black'}/>)}
+                {tickLabels.map((label: string, index: number) => {
+                    return (
+                        <g>
+                            <line x1={`${5 + (0.9 * index * increment)}%`} y1={'50%'} x2={`${5 + (0.9 * index * increment)}%`} y2={'60%'} stroke={'black'}/>
+                            <text className={styles.XAxis__TickLabels} x={`${2.5 + (0.9 * index * increment)}%`} y={'80%'} stroke={'black'}>{label}</text>
+                        </g>
+                    )}
+                )}
             </g>
         )
     }
