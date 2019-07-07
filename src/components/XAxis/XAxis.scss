@@ -1,3 +1,13 @@
 .XAxis {
   grid-area: x-axis;
+
+  &__Svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__Ticks {
+    width: 100%;
+    height: 100%;
+  }
 }
