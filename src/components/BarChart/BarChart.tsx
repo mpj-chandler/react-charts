@@ -1,24 +1,23 @@
-import React from 'react'
+import React from 'react';
 import styles from './BarChart.scss';
 import XAxis from '../XAxis/XAxis';
-
-interface SeriesData {
-    seriesName: string;
-    points: Array<{x: number | Date | string, y: number}>
-}
+import YAxis from '../YAxis/YAxis';
+import { SeriesData, Padding } from './types';
 
 export interface BarChartProps {
     data: SeriesData[];
     title: string;
+    padding: Padding;
 }
 
-const BarChart: React.FC<BarChartProps> = (props) => {
+const BarChart: React.FC<BarChartProps> = (props: BarChartProps) => {
     return (
         <div className={styles.BarChart}>
             <div className={styles.BarChart__title}>{props.title}</div>
-            <div className={styles.BarChart__yAxis}>yAxis</div>
+            <YAxis title={'YAxis'} data={props.data} padding={props.padding}/>
             <div className={styles.BarChart__blank}>()</div>
-            <XAxis numTicks={10} range={{ min: 0, max: 100 }}/>
+            <XAxis title={'XAxis'} data={props.data} padding={props.padding}/>
+            <div className={styles.BarChart__padRight}>()</div>
         </div>
     )
 }

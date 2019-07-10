@@ -5,7 +5,7 @@ export interface AxisRange {
     max: number;
 }
 
-export interface XAxisTickProps {
+export interface YAxisTickProps {
     points: SeriesDataPoint[];
     padding: number;
 }

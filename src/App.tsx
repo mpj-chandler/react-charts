@@ -27,7 +27,8 @@ const App: React.FC<AppProps> = (props) => {
                     }
                 ]
             }
-        ]
+        ],
+        padding: { left: 10, right: 10, top: 10, bottom: 10 }
     }
     return (
         <div className={styles.App} {...props}>

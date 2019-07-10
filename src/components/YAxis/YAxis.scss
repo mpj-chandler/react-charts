@@ -1,0 +1,17 @@
+.YAxis {
+  grid-area: y-axis;
+
+  &__Svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__Ticks {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__TickLabels {
+    font-size: calc(8px + 0.5vh);
+  }
+}
