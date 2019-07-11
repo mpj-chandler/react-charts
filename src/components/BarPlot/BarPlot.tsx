@@ -5,7 +5,7 @@ import Bar from '../Bar/Bar';
 import { getYAxisRange } from '../../utils/getYAxisRange';
 import { getXAxisRange } from '../../utils/getXAxisRange';
 
-interface BarPlotProps {
+export interface BarPlotProps {
     padding: Padding;
     data: SeriesData[],
     xAxisConfig?: AxisConfig,

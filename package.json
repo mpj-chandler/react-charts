@@ -21,6 +21,7 @@
     "@types/react": "^16.8.23",
     "@types/react-test-renderer": "^16.8.2",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-dev-expression": "^0.2.1",
     "babel-plugin-styled-components": "^1.10.6",
@@ -52,6 +53,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/webpack-env": "^1.13.9",
     "babel": "^6.23.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "style-loader": "^0.23.1",
@@ -68,28 +70,5 @@
     "start": "webpack-dev-server",
     "test": "jest --coverage",
     "test:watch": "jest --watch --coverage"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(css|less|scss|sss|styl)$": "cssTransform.js"
-    },
-    "moduleDirectories": [
-      "node_modules"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "d.ts"
-    ],
-    "testMatch": [
-      "**/?(*.)test.ts?(x)"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{ts,tsx}",
-      "!**/*.d.ts",
-      "!node_modules/**/*",
-      "!**/index.tsx"
-    ]
   }
 }

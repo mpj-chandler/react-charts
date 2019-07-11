@@ -3,7 +3,7 @@ import { SeriesDataPoint, AxisRange, Padding } from '../BarChart/types';
 import styles from './Bar.scss';
 import { useAnimation } from '../../utils/useAnimation';
 
-interface BarProps {
+export interface BarProps {
     point: SeriesDataPoint
     yRange: AxisRange;
     xRange: AxisRange;

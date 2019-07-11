@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bar it renders consistently 1`] = `
+<rect
+  fill="anything"
+  height="0%"
+  stroke="anything"
+  width="100%"
+  x="-41%"
+  y="100%"
+/>
+`;

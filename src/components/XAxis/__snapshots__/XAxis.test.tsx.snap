@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`XAxis it renders consistently 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="0%"
+      x2="100%"
+      y1="0%"
+      y2="0%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="0%"
+          x2="0%"
+          y1="0%"
+          y2="10%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="0%"
+          y="25%"
+        >
+          0
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="45%"
+          x2="45%"
+          y1="0%"
+          y2="10%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="45%"
+          y="25%"
+        >
+          1
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="90%"
+          x2="90%"
+          y1="0%"
+          y2="10%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="90%"
+          y="25%"
+        >
+          2
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;

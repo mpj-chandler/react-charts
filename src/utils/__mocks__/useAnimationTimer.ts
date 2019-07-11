@@ -1,0 +1,1 @@
+export const useAnimationTimer = jest.fn();

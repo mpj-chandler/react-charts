@@ -26,17 +26,14 @@ const XAxis: React.FC<AxisProps> = (props) => {
         )
     }
     
-    if(props.data && props.data.length > 0 && props.data[0].points.length > 0) {
-        return (
-            <div className={styles.YAxis}>
-                <svg className={styles.YAxis__Svg}>
-                    <line x1={'100%'} y1={'10%'} x2={'100%'} y2={'100%'} stroke={'black'} fill={'transparent'} strokeWidth={1}/>
-                    {renderTicks({data: props.data, padding: props.padding.right, config: props.config})}
-                </svg>
-            </div>
-        )
-    }
-    return <div>No data!</div>
+    return (
+        <div className={styles.YAxis}>
+            <svg className={styles.YAxis__Svg}>
+                <line x1={'100%'} y1={'10%'} x2={'100%'} y2={'100%'} stroke={'black'} fill={'transparent'} strokeWidth={1}/>
+                {renderTicks({data: props.data, padding: props.padding.right, config: props.config})}
+            </svg>
+        </div>
+    )
 };
 
 export default XAxis;

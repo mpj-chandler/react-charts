@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BarPlot it renders consistently 1`] = `
+<svg
+  className="BarPlot"
+>
+  <g>
+    <div
+      fill="red"
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 0,
+          "y": 10,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+    <div
+      fill="red"
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 1,
+          "y": 20,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+    <div
+      fill="red"
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 2,
+          "y": 30,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+  </g>
+</svg>
+`;

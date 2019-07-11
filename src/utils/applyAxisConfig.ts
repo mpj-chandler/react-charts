@@ -2,7 +2,7 @@ import { AxisRange, AxisConfig } from '../components/BarChart/types';
 import { applyZeroIntercept } from './applyZeroIntercept';
 import { applyMargin } from './applyMargin';
 
-export function applyAxisConfig(range: AxisRange, config: AxisConfig) {
+export function applyAxisConfig(range: AxisRange, config?: AxisConfig) {
 
     if (config) {
         if (config.zeroIntercept) {

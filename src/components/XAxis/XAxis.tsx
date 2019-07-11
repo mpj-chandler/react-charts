@@ -27,17 +27,14 @@ const XAxis: React.FC<AxisProps> = (props) => {
         )
     }
     
-    if(props.data && props.data.length > 0 && props.data[0].points.length > 0) {
-        return (
-            <div className={styles.XAxis}>
-                <svg className={styles.XAxis__Svg}>
-                    <line x1={'0%'} y1={'0%'} x2={'100%'} y2={'0%'} stroke={'black'} fill={'transparent'} strokeWidth={1}/>
-                    {renderTicks({data: props.data, padding: props.padding, config: props.config})}
-                </svg>
-            </div>
-        )
-    }
-    return <div>No data!</div>
+    return (
+        <div className={styles.XAxis}>
+            <svg className={styles.XAxis__Svg}>
+                <line x1={'0%'} y1={'0%'} x2={'100%'} y2={'0%'} stroke={'black'} fill={'transparent'} strokeWidth={1}/>
+                {renderTicks({data: props.data, padding: props.padding, config: props.config})}
+            </svg>
+        </div>
+    );
 };
 
 export default XAxis;

@@ -1,14 +1,12 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
-import BarChart, { BarChartProps } from './BarChart';
+import BarPlot, { BarPlotProps } from './BarPlot';
 
-jest.mock('../XAxis/XAxis.tsx');
-jest.mock('../YAxis/YAxis.tsx');
-jest.mock('../BarPlot/BarPlot.tsx');
+jest.mock('../Bar/Bar.tsx');
 
-describe('Bar Chart', () => {
-    const props: BarChartProps = {
-        title: 'anything',
+describe('BarPlot', () => {
+
+    const props: BarPlotProps = {
         data: [
             {
                 seriesName: 'A',
@@ -35,8 +33,9 @@ describe('Bar Chart', () => {
             right: 10
         }
     }
+
     it('it renders consistently', () => {
-        const component = TestRenderer.create(<BarChart {...props}/>)
+        const component = TestRenderer.create(<BarPlot {...props}/>);
 
         expect(component.toJSON()).toMatchSnapshot();
     })
