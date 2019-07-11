@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-areas: "title title pad-right" "y-axis plot pad-right" "blank x-axis pad-right";
+  grid-template-areas: "title title" "y-axis plot" "blank x-axis";
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 10% 70% 20%;
 
@@ -10,15 +10,8 @@
     grid-area: title;
   }
 
-  &__yAxis {
-    grid-area: y-axis;
-  }
-
   &__blank {
     grid-area: blank;
-  }
-
-  &__padRight {
-    fill: transparent;
+    z-index: 0;
   }
 }

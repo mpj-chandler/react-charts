@@ -28,7 +28,15 @@ const App: React.FC<AppProps> = (props) => {
                 ]
             }
         ],
-        padding: { left: 10, right: 10, top: 10, bottom: 10 }
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        xAxisConfig: {
+            zeroIntercept: true,
+            margin: 1.1
+        },
+        yAxisConfig: {
+            zeroIntercept: true,
+            margin: 1.1
+        }
     }
     return (
         <div className={styles.App} {...props}>

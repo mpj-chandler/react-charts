@@ -1,11 +1,7 @@
-import { SeriesDataPoint } from "../BarChart/types";
-
-export interface AxisRange {
-    min: number;
-    max: number;
-}
+import { SeriesData, Padding, AxisConfig } from "../BarChart/types";
 
 export interface XAxisTickProps {
-    points: SeriesDataPoint[];
-    padding: number;
+    data: SeriesData[];
+    padding: Padding;
+    config?: AxisConfig;
 }

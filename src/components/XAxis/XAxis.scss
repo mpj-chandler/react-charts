@@ -1,5 +1,6 @@
 .XAxis {
   grid-area: x-axis;
+  z-index: 100;
 
   &__Svg {
     width: 100%;

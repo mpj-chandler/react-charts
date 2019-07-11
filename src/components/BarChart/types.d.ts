@@ -14,3 +14,20 @@ export interface Padding {
     top: number;
     bottom: number;
 }
+
+export interface AxisRange {
+    min: number;
+    max: number;
+}
+
+export interface AxisProps {
+    data: SeriesData[];
+    title: string;
+    padding: Padding;
+    config?: AxisConfig;
+}
+
+export interface AxisConfig {
+    zeroIntercept: boolean;
+    margin: number;
+}

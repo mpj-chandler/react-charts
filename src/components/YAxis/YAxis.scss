@@ -1,5 +1,6 @@
 .YAxis {
   grid-area: y-axis;
+  z-index: 1;
 
   &__Svg {
     width: 100%;

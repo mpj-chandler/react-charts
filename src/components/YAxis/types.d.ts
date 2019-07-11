@@ -1,4 +1,4 @@
-import { SeriesDataPoint } from "../BarChart/types";
+import { SeriesData, AxisConfig } from "../BarChart/types";
 
 export interface AxisRange {
     min: number;
@@ -6,6 +6,7 @@ export interface AxisRange {
 }
 
 export interface YAxisTickProps {
-    points: SeriesDataPoint[];
+    data: SeriesData[];
     padding: number;
+    config?: AxisConfig;
 }
