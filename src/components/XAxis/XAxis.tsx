@@ -17,7 +17,7 @@ const XAxis: React.FC<AxisProps> = (props) => {
                     const x1 = ((100 - props.padding.right) * (label - range.min) / interval);
                     const textXPos = Math.min(Math.max(x1, 0), (100 - props.padding.right / 2));
                     return (
-                        <g>
+                        <g key={label}>
                             <line x1={`${x1}%`} y1={'0%'} x2={`${x1}%`} y2={`${props.padding.right}%`} stroke={'black'}/>
                             <text className={styles.XAxis__TickLabels} x={`${textXPos}%`} y={'25%'} stroke={'black'}>{label}</text>
                         </g>
