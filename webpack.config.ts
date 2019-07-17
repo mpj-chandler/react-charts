@@ -1,9 +1,9 @@
-"use strict";
-exports.__esModule = true;
-var path = require("path");
-var HtmlWebpackPlugin = require("html-webpack-plugin");
-var postcssPresetEnv = require("postcss-preset-env");
-var config = {
+import { Configuration } from 'webpack';
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import postcssPresetEnv from 'postcss-preset-env';
+
+const config: Configuration = {
     mode: 'development',
     entry: './src/index',
     output: {
@@ -19,7 +19,7 @@ var config = {
             {
                 test: /\.(ts|js)x?$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader'
+                loader: 'babel-loader',
             },
             {
                 test: /\.(sass|scss)$/,
@@ -45,11 +45,11 @@ var config = {
                         loader: 'postcss-loader',
                         options: {
                             ident: 'postcss',
-                            plugins: function () { return [
+                            plugins: () => [
                                 postcssPresetEnv({
-                                    autoprefixer: { grid: true }
+                                    autoprefixer: {grid: true}
                                 })
-                            ]; },
+                            ],
                             sourceMap: true
                         }
                     },
@@ -87,7 +87,7 @@ var config = {
                     }
                 ]
             }
-        ]
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -95,4 +95,5 @@ var config = {
         })
     ]
 };
-exports["default"] = config;
+
+export default config;
