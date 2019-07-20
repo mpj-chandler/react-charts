@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './App.scss';
-import BarChart, {BarChartProps} from './components/BarChart/BarChart';
+import BarChart, { BarChartProps } from './components/BarChart/BarChart';
+import Placement from './enums/Placement';
 
 interface AppProps {
 
@@ -31,11 +32,13 @@ const App: React.FC<AppProps> = (props) => {
         padding: { left: 10, right: 10, top: 10, bottom: 10 },
         xAxisConfig: {
             zeroIntercept: true,
-            margin: 10
+            margin: 10,
+            tickPlacement: Placement.Bucket,
         },
         yAxisConfig: {
             zeroIntercept: true,
-            margin: 10
+            margin: 10,
+            tickPlacement: Placement.Aligned
         }
     }
     return (

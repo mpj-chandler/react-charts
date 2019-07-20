@@ -1,7 +1,8 @@
 import React from 'react';
-import { SeriesDataPoint, AxisRange, Padding } from '../BarChart/types';
-import styles from './Bar.scss';
+import { AxisRange, Padding, SeriesDataPoint } from '../BarChart/types';
 import { useAnimation } from '../../utils/useAnimation';
+import Placement from '../../enums/Placement';
+import { getXAxisRange } from '../../utils/getXAxisRange';
 
 export interface BarProps {
     point: SeriesDataPoint
@@ -11,10 +12,22 @@ export interface BarProps {
     fill: string;
     stroke: string;
     padding: Padding;
+    numBars: number;
+    barAlignment: Placement;
+}
+
+function getBarXPosition(props: BarProps) {
+    const interval = props.xRange.max - props.xRange.min;
+
+    if (props.barAlignment === Placement.Bucket) {
+        const step = 0.5 * interval / props.numBars;
+        return (100 - props.padding.right) * ((step + props.point.x) / interval);
+    }
+    return (100 - props.padding.right) * (props.point.x / interval);
 }
 
 const Bar: React.FC<BarProps> = (props: BarProps) => {
-    const x = ((100 - props.padding.right) * (props.point.x / (props.xRange.max - props.xRange.min)));
+    const x = getBarXPosition(props);
     const height = (100 - props.padding.top) * ((props.point.y - props.yRange.min) / (props.yRange.max - props.yRange.min));
     const y = 100 - height;
 

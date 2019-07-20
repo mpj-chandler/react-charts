@@ -1,3 +1,6 @@
+/// <reference types="./__types__/postCssPresetEnv" />
+// The above is needed for ts-node
+
 import { Configuration } from 'webpack';
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';

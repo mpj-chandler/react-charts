@@ -1,4 +1,4 @@
-import { AxisRange, AxisConfig } from '../components/BarChart/types';
+import { AxisConfig, AxisRange } from '../components/BarChart/types';
 import { applyZeroIntercept } from './applyZeroIntercept';
 import { applyMargin } from './applyMargin';
 

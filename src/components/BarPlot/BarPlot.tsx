@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './BarPlot.scss';
-import { Padding, SeriesData, SeriesDataPoint, AxisRange, AxisConfig } from '../BarChart/types';
+import { AxisConfig, Padding, SeriesData, SeriesDataPoint } from '../BarChart/types';
 import Bar from '../Bar/Bar';
 import { getYAxisRange } from '../../utils/getYAxisRange';
 import { getXAxisRange } from '../../utils/getXAxisRange';
+import Placement from '../../enums/Placement';
 
 export interface BarPlotProps {
     padding: Padding;
@@ -15,8 +16,9 @@ export interface BarPlotProps {
 const BarPlot: React.FC<BarPlotProps> = (props: BarPlotProps) => {
     const xRange = getXAxisRange(props.data, props.xAxisConfig);
     const yRange = getYAxisRange(props.data, props.yAxisConfig);
-
+    const placement = props.xAxisConfig ? props.xAxisConfig.tickPlacement : Placement.Aligned;
     console.log('XRange: ', xRange, 'YRange: ', yRange);
+
 
     return (
         <svg className={styles.BarPlot}>
@@ -32,6 +34,8 @@ const BarPlot: React.FC<BarPlotProps> = (props: BarPlotProps) => {
                             fill={'red'}
                             stroke={'black'}
                             padding={props.padding}
+                            numBars={props.data[0].points.length}
+                            barAlignment={placement}
                         />
                     );
                 })}

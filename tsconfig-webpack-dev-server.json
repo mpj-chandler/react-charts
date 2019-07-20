@@ -10,9 +10,9 @@
     "strictFunctionTypes": true,
     "esModuleInterop": true,
     "baseUrl": "../",
-    "typeRoots": [
-      "../"
-    ],
+    "paths": {
+      "postcss-preset-env": ["./declarations.d.ts"]
+    },
     "types": [],
     "noEmit": true,
     "forceConsistentCasingInFileNames": true

@@ -1,3 +1,5 @@
+import Placement from '../../enums/Placement';
+
 export interface SeriesDataPoint {
     x: number;
     y: number;
@@ -30,4 +32,5 @@ export interface AxisProps {
 export interface AxisConfig {
     zeroIntercept: boolean;
     margin: number;
+    tickPlacement: Placement;
 }
