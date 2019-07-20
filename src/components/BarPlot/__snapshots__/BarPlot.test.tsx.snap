@@ -6,7 +6,9 @@ exports[`BarPlot it renders consistently 1`] = `
 >
   <g>
     <div
+      barAlignment={0}
       fill="red"
+      numBars={3}
       padding={
         Object {
           "bottom": 10,
@@ -39,7 +41,9 @@ exports[`BarPlot it renders consistently 1`] = `
       Mock Bar 
     </div>
     <div
+      barAlignment={0}
       fill="red"
+      numBars={3}
       padding={
         Object {
           "bottom": 10,
@@ -72,7 +76,9 @@ exports[`BarPlot it renders consistently 1`] = `
       Mock Bar 
     </div>
     <div
+      barAlignment={0}
       fill="red"
+      numBars={3}
       padding={
         Object {
           "bottom": 10,

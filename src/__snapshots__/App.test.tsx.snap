@@ -46,12 +46,14 @@ exports[`App it renders consistently 1`] = `
       xAxisConfig={
         Object {
           "margin": 10,
+          "tickPlacement": 1,
           "zeroIntercept": true,
         }
       }
       yAxisConfig={
         Object {
           "margin": 10,
+          "tickPlacement": 0,
           "zeroIntercept": true,
         }
       }

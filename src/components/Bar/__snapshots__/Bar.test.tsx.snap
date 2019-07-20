@@ -1,6 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Bar it renders consistently 1`] = `
+exports[`Bar it renders consistently with Placement set to Aligned 1`] = `
+<rect
+  fill="anything"
+  height="0%"
+  stroke="anything"
+  width="100%"
+  x="-41%"
+  y="100%"
+/>
+`;
+
+exports[`Bar it renders consistently with Placement set to Bucket 1`] = `
+<rect
+  fill="anything"
+  height="0%"
+  stroke="anything"
+  width="100%"
+  x="-26%"
+  y="100%"
+/>
+`;
+
+exports[`Bar it renders consistently with defaults 1`] = `
 <rect
   fill="anything"
   height="0%"
