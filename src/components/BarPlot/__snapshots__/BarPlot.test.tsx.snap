@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BarPlot it renders consistently 1`] = `
+exports[`BarPlot it renders consistently with defaults 1`] = `
 <svg
   className="BarPlot"
 >
@@ -98,6 +98,462 @@ exports[`BarPlot it renders consistently 1`] = `
       xRange={
         Object {
           "max": 2,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+  </g>
+</svg>
+`;
+
+exports[`BarPlot it renders consistently with tick alignment explicitly set to Aligned for XAxis and Bucket for YAxis 1`] = `
+<svg
+  className="BarPlot"
+>
+  <g>
+    <div
+      barAlignment={0}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 0,
+          "y": 10,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+    <div
+      barAlignment={0}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 1,
+          "y": 20,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+    <div
+      barAlignment={0}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 2,
+          "y": 30,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+  </g>
+</svg>
+`;
+
+exports[`BarPlot it renders consistently with tick alignment explicitly set to Aligned for both axes 1`] = `
+<svg
+  className="BarPlot"
+>
+  <g>
+    <div
+      barAlignment={0}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 0,
+          "y": 10,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+    <div
+      barAlignment={0}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 1,
+          "y": 20,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+    <div
+      barAlignment={0}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 2,
+          "y": 30,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+  </g>
+</svg>
+`;
+
+exports[`BarPlot it renders consistently with tick alignment explicitly set to Bucket for XAxis and Aligned for YAxis 1`] = `
+<svg
+  className="BarPlot"
+>
+  <g>
+    <div
+      barAlignment={1}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 0,
+          "y": 10,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2.6666666666666665,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+    <div
+      barAlignment={1}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 1,
+          "y": 20,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2.6666666666666665,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+    <div
+      barAlignment={1}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 2,
+          "y": 30,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2.6666666666666665,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+  </g>
+</svg>
+`;
+
+exports[`BarPlot it renders consistently with tick alignment explicitly set to Bucket for both axes 1`] = `
+<svg
+  className="BarPlot"
+>
+  <g>
+    <div
+      barAlignment={1}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 0,
+          "y": 10,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2.6666666666666665,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+    <div
+      barAlignment={1}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 1,
+          "y": 20,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2.6666666666666665,
+          "min": 0,
+        }
+      }
+      yRange={
+        Object {
+          "max": 30,
+          "min": 10,
+        }
+      }
+    >
+      Mock Bar 
+    </div>
+    <div
+      barAlignment={1}
+      fill="red"
+      numBars={3}
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      point={
+        Object {
+          "x": 2,
+          "y": 30,
+        }
+      }
+      stroke="black"
+      width={10}
+      xRange={
+        Object {
+          "max": 2.6666666666666665,
           "min": 0,
         }
       }

@@ -1,7 +1,8 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 import XAxis from './XAxis';
-import { AxisProps } from '../BarChart/types';
+import { AxisConfig, AxisProps } from '../BarChart/types';
+import Placement from '../../enums/Placement';
 
 describe('XAxis', () => {
     const props: AxisProps = {
@@ -33,9 +34,31 @@ describe('XAxis', () => {
         }
     };
 
-    it('it renders consistently', () => {
+    const inlineConfig: AxisConfig = {
+        zeroIntercept: false,
+        margin: 0,
+        tickPlacement: Placement.Aligned
+    };
+
+    const bucketConfig: AxisConfig = { ...inlineConfig, tickPlacement: Placement.Bucket };
+
+    it('it renders consistently with default tick placement', () => {
         const component = TestRenderer.create(<XAxis {...props}/>);
 
         expect(component.toJSON()).toMatchSnapshot();
-    })
-})
+    });
+
+    it('it renders consistently with explicit inline tick placement', () => {
+
+        const component = TestRenderer.create(<XAxis {...props} config={inlineConfig}/>);
+
+        expect(component.toJSON()).toMatchSnapshot();
+    });
+
+    it('it renders consistently with explicit bucket tick placement', () => {
+
+        const component = TestRenderer.create(<XAxis {...props} config={bucketConfig}/>);
+
+        expect(component.toJSON()).toMatchSnapshot();
+    });
+});

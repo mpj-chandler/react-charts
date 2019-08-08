@@ -17,8 +17,6 @@ const BarPlot: React.FC<BarPlotProps> = (props: BarPlotProps) => {
     const xRange = getXAxisRange(props.data, props.xAxisConfig);
     const yRange = getYAxisRange(props.data, props.yAxisConfig);
     const placement = props.xAxisConfig ? props.xAxisConfig.tickPlacement : Placement.Aligned;
-    console.log('XRange: ', xRange, 'YRange: ', yRange);
-
 
     return (
         <svg className={styles.BarPlot}>

@@ -39,6 +39,7 @@
     "html-webpack-plugin": "^3.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
+    "jest-chance": "^0.0.34",
     "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.6.0",
@@ -76,5 +77,8 @@
     "start": "webpack-dev-server",
     "test": "jest --coverage",
     "test:watch": "jest --watch --coverage"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["./setupTests.js"]
   }
 }

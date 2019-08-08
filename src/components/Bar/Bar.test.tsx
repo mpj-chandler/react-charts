@@ -3,6 +3,8 @@ import TestRenderer from 'react-test-renderer';
 import Bar, { BarProps } from './Bar';
 import Placement from '../../enums/Placement';
 
+
+
 describe('Bar', () => {
     const props: BarProps = {
         point: { x: 10, y: 100 },
