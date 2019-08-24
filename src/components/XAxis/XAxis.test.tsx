@@ -5,60 +5,184 @@ import { AxisConfig, AxisProps } from '../BarChart/types';
 import Placement from '../../enums/Placement';
 
 describe('XAxis', () => {
-    const props: AxisProps = {
-        title: 'anything',
-        data: [
-            {
-                seriesName: 'A',
-                points: [
-                    {
-                        x: 0,
-                        y: 10
-                    },
-                    {
-                        x: 1,
-                        y: 20
-                    },
-                    {
-                        x: 2,
-                        y: 30
-                    }
-                ]
+    describe('When XAxis values are all positive', () => {
+        const props: AxisProps = {
+            title: 'anything',
+            data: [
+                {
+                    seriesName: 'A',
+                    points: [
+                        {
+                            x: 0,
+                            y: 10
+                        },
+                        {
+                            x: 1,
+                            y: 20
+                        },
+                        {
+                            x: 2,
+                            y: 30
+                        }
+                    ]
+                }
+            ],
+            padding: {
+                top: 10,
+                bottom: 10,
+                left: 10,
+                right: 10
             }
-        ],
-        padding: {
-            top: 10,
-            bottom: 10,
-            left: 10,
-            right: 10
-        }
-    };
+        };
+    
+        const inlineConfig: AxisConfig = {
+            zeroIntercept: false,
+            margin: 0,
+            tickPlacement: Placement.Aligned,
+            tickLength: 10
+        };
+    
+        const bucketConfig: AxisConfig = { ...inlineConfig, tickPlacement: Placement.Bucket };
+    
+        it('it renders consistently with default tick placement', () => {
+            const component = TestRenderer.create(<XAxis {...props}/>);
+    
+            expect(component.toJSON()).toMatchSnapshot();
+        });
+    
+        it('it renders consistently with explicit inline tick placement', () => {
+    
+            const component = TestRenderer.create(<XAxis {...props} config={inlineConfig}/>);
+    
+            expect(component.toJSON()).toMatchSnapshot();
+        });
+    
+        it('it renders consistently with explicit bucket tick placement', () => {
+    
+            const component = TestRenderer.create(<XAxis {...props} config={bucketConfig}/>);
+    
+            expect(component.toJSON()).toMatchSnapshot();
+        });
+    });
+    
 
-    const inlineConfig: AxisConfig = {
-        zeroIntercept: false,
-        margin: 0,
-        tickPlacement: Placement.Aligned
-    };
-
-    const bucketConfig: AxisConfig = { ...inlineConfig, tickPlacement: Placement.Bucket };
-
-    it('it renders consistently with default tick placement', () => {
-        const component = TestRenderer.create(<XAxis {...props}/>);
-
-        expect(component.toJSON()).toMatchSnapshot();
+    describe('When XAxis values are all negative', () => {
+        const props: AxisProps = {
+            title: 'anything',
+            data: [
+                {
+                    seriesName: 'A',
+                    points: [
+                        {
+                            x: -3,
+                            y: 10
+                        },
+                        {
+                            x: -2,
+                            y: 20
+                        },
+                        {
+                            x: -1,
+                            y: 30
+                        }
+                    ]
+                }
+            ],
+            padding: {
+                top: 10,
+                bottom: 10,
+                left: 10,
+                right: 10
+            }
+        };
+    
+        const inlineConfig: AxisConfig = {
+            zeroIntercept: false,
+            margin: 0,
+            tickPlacement: Placement.Aligned,
+            tickLength: 10
+        };
+    
+        const bucketConfig: AxisConfig = { ...inlineConfig, tickPlacement: Placement.Bucket };
+    
+        it('it renders consistently with default tick placement', () => {
+            const component = TestRenderer.create(<XAxis {...props}/>);
+    
+            expect(component.toJSON()).toMatchSnapshot();
+        });
+    
+        it('it renders consistently with explicit inline tick placement', () => {
+    
+            const component = TestRenderer.create(<XAxis {...props} config={inlineConfig}/>);
+    
+            expect(component.toJSON()).toMatchSnapshot();
+        });
+    
+        it('it renders consistently with explicit bucket tick placement', () => {
+    
+            const component = TestRenderer.create(<XAxis {...props} config={bucketConfig}/>);
+    
+            expect(component.toJSON()).toMatchSnapshot();
+        });
     });
 
-    it('it renders consistently with explicit inline tick placement', () => {
-
-        const component = TestRenderer.create(<XAxis {...props} config={inlineConfig}/>);
-
-        expect(component.toJSON()).toMatchSnapshot();
-    });
-
-    it('it renders consistently with explicit bucket tick placement', () => {
-
-        const component = TestRenderer.create(<XAxis {...props} config={bucketConfig}/>);
-
-        expect(component.toJSON()).toMatchSnapshot();
+    describe('When XAxis values span negative and positive values', () => {
+        const props: AxisProps = {
+            title: 'anything',
+            data: [
+                {
+                    seriesName: 'A',
+                    points: [
+                        {
+                            x: -2,
+                            y: 10
+                        },
+                        {
+                            x: -1,
+                            y: 20
+                        },
+                        {
+                            x: 2,
+                            y: 30
+                        }
+                    ]
+                }
+            ],
+            padding: {
+                top: 10,
+                bottom: 10,
+                left: 10,
+                right: 10
+            }
+        };
+    
+        const inlineConfig: AxisConfig = {
+            zeroIntercept: false,
+            margin: 0,
+            tickPlacement: Placement.Aligned,
+            tickLength: 10
+        };
+    
+        const bucketConfig: AxisConfig = { ...inlineConfig, tickPlacement: Placement.Bucket };
+    
+        it('it renders consistently with default tick placement', () => {
+            const component = TestRenderer.create(<XAxis {...props}/>);
+    
+            expect(component.toJSON()).toMatchSnapshot();
+        });
+    
+        it('it renders consistently with explicit inline tick placement', () => {
+    
+            const component = TestRenderer.create(<XAxis {...props} config={inlineConfig}/>);
+    
+            expect(component.toJSON()).toMatchSnapshot();
+        });
+    
+        it('it renders consistently with explicit bucket tick placement', () => {
+    
+            const component = TestRenderer.create(<XAxis {...props} config={bucketConfig}/>);
+    
+            expect(component.toJSON()).toMatchSnapshot();
+        });
     });
 });

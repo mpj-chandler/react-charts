@@ -34,11 +34,13 @@ const App: React.FC<AppProps> = (props) => {
             zeroIntercept: true,
             margin: 10,
             tickPlacement: Placement.Bucket,
+            tickLength: 5
         },
         yAxisConfig: {
             zeroIntercept: true,
             margin: 10,
-            tickPlacement: Placement.Aligned
+            tickPlacement: Placement.Aligned,
+            tickLength: 5
         }
     }
 
@@ -68,11 +70,13 @@ const App: React.FC<AppProps> = (props) => {
             zeroIntercept: true,
             margin: 10,
             tickPlacement: Placement.Bucket,
+            tickLength: 5
         },
         yAxisConfig: {
             zeroIntercept: true,
             margin: 10,
-            tickPlacement: Placement.Aligned
+            tickPlacement: Placement.Aligned,
+            tickLength: 5
         }
     }
 
@@ -102,11 +106,13 @@ const App: React.FC<AppProps> = (props) => {
             zeroIntercept: true,
             margin: 10,
             tickPlacement: Placement.Bucket,
+            tickLength: 5
         },
         yAxisConfig: {
             zeroIntercept: true,
             margin: 10,
-            tickPlacement: Placement.Aligned
+            tickPlacement: Placement.Aligned,
+            tickLength: 5
         }
     }
 

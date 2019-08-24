@@ -11,8 +11,8 @@ exports[`YAxis it renders consistently 1`] = `
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="100%"
-      x2="100%"
+      x1="0%"
+      x2="0%"
       y1="10%"
       y2="100%"
     />
@@ -22,15 +22,15 @@ exports[`YAxis it renders consistently 1`] = `
       <g>
         <line
           stroke="black"
-          x1="90%"
-          x2="100%"
+          x1="-10%"
+          x2="0%"
           y1="100%"
           y2="100%"
         />
         <text
           className="YAxis__TickLabels"
           stroke="black"
-          x="60%"
+          x="-20%"
           y="95%"
         >
           10
@@ -39,15 +39,15 @@ exports[`YAxis it renders consistently 1`] = `
       <g>
         <line
           stroke="black"
-          x1="90%"
-          x2="100%"
+          x1="-10%"
+          x2="0%"
           y1="55%"
           y2="55%"
         />
         <text
           className="YAxis__TickLabels"
           stroke="black"
-          x="60%"
+          x="-20%"
           y="55%"
         >
           20
@@ -56,15 +56,15 @@ exports[`YAxis it renders consistently 1`] = `
       <g>
         <line
           stroke="black"
-          x1="90%"
-          x2="100%"
+          x1="-10%"
+          x2="0%"
           y1="10%"
           y2="10%"
         />
         <text
           className="YAxis__TickLabels"
           stroke="black"
-          x="60%"
+          x="-20%"
           y="10%"
         >
           30
