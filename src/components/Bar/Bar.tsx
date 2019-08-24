@@ -20,10 +20,10 @@ function getBarEndingHeight(props: BarProps): number {
     const yMin = Math.min(0, Math.max(0, props.yRange.min));
     
     if (props.yRange.max <= 0) {
-        return (100 - props.padding.top) * ((yMin - props.point.y) / (props.yRange.min - props.yRange.max));
+        return (100 - (props.padding.top + props.padding.bottom)) * ((yMin - props.point.y) / (props.yRange.min - props.yRange.max));
     }
 
-    return (100 - props.padding.top) * ((props.point.y - yMin) / (props.yRange.max - props.yRange.min));
+    return (100 - (props.padding.top + props.padding.bottom)) * ((props.point.y - yMin) / (props.yRange.max - props.yRange.min));
 }
 
 function getZeroPoint(props: BarProps): number {
@@ -35,9 +35,9 @@ function getBarXPosition(props: BarProps) {
 
     if (props.barAlignment === Placement.Bucket) {
         const step = 0.5 * interval / props.numBars;
-        return (100 - props.padding.right) * ((step + props.point.x) / interval);
+        return ((100 - (props.padding.right + props.padding.left)) * ((step + props.point.x) / interval)) + props.padding.left;
     }
-    return (100 - props.padding.right) * (props.point.x / interval);
+    return ((100 - (props.padding.right + props.padding.left)) * (props.point.x / interval)) + props.padding.left;
 }
 
 function getY(height: number, yStart: number, value: number) {
@@ -54,7 +54,7 @@ const Bar: React.FC<BarProps> = (props: BarProps) => {
     const height = getBarEndingHeight(props);
     const zeroPoint = getZeroPoint(props);
     const animation = useAnimation('elastic', 600, 0);
-    const yStart = props.yRange.max <= 0 ? props.padding.top : 100 * zeroPoint;
+    const yStart = props.yRange.max <= 0 ? props.padding.top : ((100 - (props.padding.top + props.padding.bottom)) * zeroPoint) + props.padding.top;
     
     return (
         <rect 

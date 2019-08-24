@@ -8,7 +8,7 @@ import { getXAxisRange } from '../../utils/getXAxisRange';
 function getYAxisXPos(props: AxisProps): number {
     const range = getXAxisRange(props.data, props.config);
     
-    return 100 * (range.min / (range.max - range.min));
+    return (100 * (range.min / (range.max - range.min)) + props.padding.left);
 }
 
 const YAxis: React.FC<AxisProps> = (props) => {
@@ -20,12 +20,12 @@ const YAxis: React.FC<AxisProps> = (props) => {
         return (
             <g className={styles.YAxis__Ticks}>
                 {tickLabels.map((label: number) => {
-                    const y1 = ((100 - props.padding) * (1 - (label - range.min) / interval)) + 10;
-                    const textYPos = Math.max(Math.min(y1, (100 - props.padding / 2)), props.padding / 2);
+                    const y1 = (((100 - (props.padding.top + props.padding.bottom)) * (1 - (label - range.min) / interval))) + props.padding.top;
+
                     return (
                         <g>
-                            <line x1={`${x2 - 10}%`} y1={`${y1}%`} x2={`${x2}%`} y2={`${y1}%`} stroke={'black'}/>
-                            <text className={styles.YAxis__TickLabels} x={`${x2 - 20}%`} y={`${textYPos}%`} stroke={'black'}>{label}</text>
+                            <line x1={`${x2 - props.config.tickLength}%`} y1={`${y1}%`} x2={`${x2}%`} y2={`${y1}%`} stroke={'black'}/>
+                            <text className={styles.YAxis__TickLabels} x={`${x2 - props.tickLength}%`} y={`${y1}%`} stroke={'black'}>{label}</text>
                         </g>
                     )}
                 )}
@@ -38,8 +38,8 @@ const YAxis: React.FC<AxisProps> = (props) => {
     return (
         <div className={styles.YAxis}>
             <svg className={styles.YAxis__Svg}>
-                <line x1={`${yAxisXPos}%`} y1={'10%'} x2={`${yAxisXPos}%`} y2={'100%'} stroke={'black'} fill={'transparent'} strokeWidth={1}/>
-                {renderTicks({data: props.data, padding: props.padding.right, config: props.config}, yAxisXPos)}
+                <line x1={`${yAxisXPos}%`} y1={`${props.padding.top}%`} x2={`${yAxisXPos}%`} y2={`${100 - props.padding.bottom}%`} stroke={'black'} fill={'transparent'} strokeWidth={1}/>
+                {renderTicks({data: props.data, padding: props.padding, config: props.config}, yAxisXPos)}
             </svg>
         </div>
     )

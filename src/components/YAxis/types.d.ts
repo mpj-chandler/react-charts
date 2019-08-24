@@ -7,6 +7,6 @@ export interface AxisRange {
 
 export interface YAxisTickProps {
     data: SeriesData[];
-    padding: number;
+    padding: Padding;
     config?: AxisConfig;
 }

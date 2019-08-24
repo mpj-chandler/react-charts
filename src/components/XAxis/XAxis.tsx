@@ -5,7 +5,6 @@ import { AxisProps, AxisRange, SeriesDataPoint } from '../BarChart/types';
 import { getXAxisRange } from '../../utils/getXAxisRange';
 import { getYAxisRange } from '../../utils/getYAxisRange';
 import Placement from '../../enums/Placement';
-import { ProgressPlugin } from 'webpack';
 
 function getTickXPosition(props: XAxisTickProps, label: number) {
     const range = getXAxisRange(props.data, props.config);
@@ -14,10 +13,10 @@ function getTickXPosition(props: XAxisTickProps, label: number) {
 
     if (props.config && props.config.tickPlacement === Placement.Bucket) {
         const step = interval / numPoints;
-        return (100 - props.padding.right) * ((step + label - range.min) / interval);
+        return ((100 - (props.padding.right + props.padding.left)) * ((step + label - range.min) / interval)) + props.padding.left;
     }
 
-    return (100 - props.padding.right) * (label - range.min) / interval;
+    return ((100 - (props.padding.right + props.padding.left)) * (label - range.min) / interval) + props.padding.left;
 }
 
 function getTickTextXPosition(x1: number, props: XAxisTickProps, label: number) {
@@ -27,10 +26,10 @@ function getTickTextXPosition(x1: number, props: XAxisTickProps, label: number) 
 
     if (props.config && props.config.tickPlacement === Placement.Bucket) {
         const step = 0.5 * (interval / numPoints);
-        return (100 - props.padding.right) * ((step + label - range.min) / interval);
+        return ((100 - (props.padding.left + props.padding.right)) * ((step + label - range.min) / interval)) + props.padding.left;
     }
 
-    return Math.min(Math.max(x1, 0), (100 - props.padding.right / 2));
+    return x1;
 }
 
 function renderTick(label: number, x1: number, y1: number, props: XAxisTickProps, textXPos: number, tickLength: number = 5) {
@@ -81,7 +80,7 @@ function getXAxisYPos(props: AxisProps): number {
         return props.padding.top;
     }
 
-    return 100 * (range.max / (range.max - range.min));
+    return ((100 - (props.padding.top + props.padding.bottom)) * (range.max / (range.max - range.min))) + props.padding.top;
 }
 
 const XAxis: React.FC<AxisProps> = (props) => {
@@ -91,7 +90,7 @@ const XAxis: React.FC<AxisProps> = (props) => {
     return (
         <div className={styles.XAxis}>
             <svg className={styles.XAxis__Svg}>
-                <line x1={'0%'} y1={`${axisYPos}%`} x2={'100%'} y2={`${axisYPos}%`} stroke={'black'} fill={'transparent'} strokeWidth={1}/>
+                <line x1={`${props.padding.left}%`} y1={`${axisYPos}%`} x2={`${100 - props.padding.right}%`} y2={`${axisYPos}%`} stroke={'black'} fill={'transparent'} strokeWidth={1}/>
                 {renderTicks({data: props.data, padding: props.padding, config: props.config}, axisYPos)}
             </svg>
         </div>
