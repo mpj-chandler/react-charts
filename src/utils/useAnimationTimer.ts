@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 
 
 export function useAnimationTimer(duration = 1000, delay = 0) {
@@ -36,8 +36,9 @@ export function useAnimationTimer(duration = 1000, delay = 0) {
             cancelAnimationFrame(animationFrame);
         };
     },
-    [duration, delay]
+    [duration, delay],
     );
 
     return  elapsed;
 }
+

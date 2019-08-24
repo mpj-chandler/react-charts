@@ -1,7 +1,9 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 import YAxis from './YAxis';
-import { AxisProps } from '../BarChart/types';
+import { AxisProps, AxisConfig } from '../BarChart/types';
+import Placement from '../../enums/Placement';
+
 
 describe('YAxis', () => {
     const props: AxisProps = {
@@ -33,9 +35,22 @@ describe('YAxis', () => {
         }
     };
 
+    const config: AxisConfig = {
+        zeroIntercept: true,
+        margin: 20,
+        tickPlacement: Placement.Aligned,
+        tickLength: 10
+    }
+
     it('it renders consistently', () => {
         const component = TestRenderer.create(<YAxis {...props}/>);
 
         expect(component.toJSON()).toMatchSnapshot();
-    })
+    });
+
+    it('it renders consistently with an explicit config', () => {
+        const component = TestRenderer.create(<YAxis {...props} config={{ }}/>);
+
+        expect(component.toJSON()).toMatchSnapshot();
+    });
 })

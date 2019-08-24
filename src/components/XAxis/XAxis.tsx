@@ -26,14 +26,14 @@ function getTickTextXPosition(x1: number, props: XAxisTickProps, label: number) 
 
     if (props.config && props.config.tickPlacement === Placement.Bucket) {
         const step = 0.5 * (interval / numPoints);
-        return ((100 - (props.padding.left + props.padding.right)) * ((step + label - range.min) / interval)) + props.padding.left;
+        return (100 - (props.padding.left + props.padding.right)) * ((step + label - range.min) / interval) + props.padding.left;
     }
 
     return x1;
 }
 
 function renderTick(label: number, x1: number, y1: number, props: XAxisTickProps, textXPos: number, tickLength: number = 5) {
-    const y2 = y1 === 0 ? y1 - tickLength : y1 + tickLength;
+    const y2 = y1 === props.padding.top ? y1 - tickLength / 2 : y1 + tickLength;
 
     return (
         <g key={`tickGroup-${label}`}>
@@ -85,12 +85,11 @@ function getXAxisYPos(props: AxisProps): number {
 
 const XAxis: React.FC<AxisProps> = (props) => {
     const axisYPos = getXAxisYPos(props);
-    console.log('Axis YPos: ', axisYPos);
 
     return (
         <div className={styles.XAxis}>
             <svg className={styles.XAxis__Svg}>
-                <line x1={`${props.padding.left}%`} y1={`${axisYPos}%`} x2={`${100 - props.padding.right}%`} y2={`${axisYPos}%`} stroke={'black'} fill={'transparent'} strokeWidth={1}/>
+                <line x1={`${props.padding.left}%`} y1={`${axisYPos}%`} x2={`${100 - props.padding.right / 2}%`} y2={`${axisYPos}%`} stroke={'black'} fill={'transparent'} strokeWidth={1}/>
                 {renderTicks({data: props.data, padding: props.padding, config: props.config}, axisYPos)}
             </svg>
         </div>

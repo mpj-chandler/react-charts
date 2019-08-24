@@ -16,6 +16,8 @@ const YAxis: React.FC<AxisProps> = (props) => {
         const tickLabels: number[] = props.data[0].points.map((point: SeriesDataPoint) => point.y)
         const range: AxisRange = getYAxisRange(props.data, props.config);
         const interval = range.max - range.min;
+        const tickLength = props.config ? props.config.tickLength : 5;
+
 
         return (
             <g className={styles.YAxis__Ticks}>
@@ -24,8 +26,8 @@ const YAxis: React.FC<AxisProps> = (props) => {
 
                     return (
                         <g>
-                            <line x1={`${x2 - props.config.tickLength}%`} y1={`${y1}%`} x2={`${x2}%`} y2={`${y1}%`} stroke={'black'}/>
-                            <text className={styles.YAxis__TickLabels} x={`${x2 - props.tickLength}%`} y={`${y1}%`} stroke={'black'}>{label}</text>
+                            <line x1={`${x2 - tickLength}%`} y1={`${y1}%`} x2={`${x2}%`} y2={`${y1}%`} stroke={'black'}/>
+                            <text className={styles.YAxis__TickLabels} x={`${x2 - tickLength}%`} y={`${y1}%`} stroke={'black'}>{label}</text>
                         </g>
                     )}
                 )}

@@ -49,6 +49,7 @@
     "source-map-loader": "^0.2.4",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
+    "tslint": "^5.19.0",
     "typescript": "^3.5.3",
     "url-loader": "^2.0.1",
     "webpack-cli": "^3.3.5"
@@ -76,9 +77,12 @@
     "bundle": "webpack",
     "start": "webpack-dev-server",
     "test": "jest --coverage",
-    "test:watch": "jest --watch --coverage"
+    "test:watch": "jest --watch --coverage",
+    "lint:ts": "tslint --fix 'src/**/*.ts'"
   },
   "jest": {
-    "setupFilesAfterEnv": ["./setupTests.js"]
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
   }
 }

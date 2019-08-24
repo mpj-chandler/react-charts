@@ -1,5 +1,230 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`XAxis When XAxis is rendered above the chart it renders consistently with default tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="10%"
+      y2="10%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="10%"
+          x2="10%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="10%"
+          y="7.5%"
+        >
+          1
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="50%"
+          x2="50%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="50%"
+          y="7.5%"
+        >
+          2
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="90%"
+          x2="90%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="90%"
+          y="7.5%"
+        >
+          3
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis is rendered above the chart it renders consistently with explicit bucket tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="10%"
+      y2="10%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="36.666666666666664%"
+          x2="36.666666666666664%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="23.333333333333332%"
+          y="7.5%"
+        >
+          1
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="66.66666666666667%"
+          x2="66.66666666666667%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="53.33333333333334%"
+          y="7.5%"
+        >
+          2
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="96.66666666666669%"
+          x2="96.66666666666669%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="83.33333333333334%"
+          y="7.5%"
+        >
+          3
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis is rendered above the chart it renders consistently with explicit inline tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="10%"
+      y2="10%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="10%"
+          x2="10%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="10%"
+          y="7.5%"
+        >
+          1
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="50%"
+          x2="50%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="50%"
+          y="7.5%"
+        >
+          2
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="90%"
+          x2="90%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="90%"
+          y="7.5%"
+        >
+          3
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
 exports[`XAxis When XAxis values are all negative it renders consistently with default tick placement 1`] = `
 <div
   className="XAxis"
@@ -11,10 +236,10 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
@@ -22,16 +247,16 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
       <g>
         <line
           stroke="black"
-          x1="0%"
-          x2="0%"
-          y1="150%"
-          y2="155%"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="0%"
-          y="155%"
+          x="10%"
+          y="135%"
         >
           -3
         </text>
@@ -39,16 +264,16 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
       <g>
         <line
           stroke="black"
-          x1="45%"
-          x2="45%"
-          y1="150%"
-          y2="155%"
+          x1="50%"
+          x2="50%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="45%"
-          y="155%"
+          x="50%"
+          y="135%"
         >
           -2
         </text>
@@ -58,14 +283,14 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
           stroke="black"
           x1="90%"
           x2="90%"
-          y1="150%"
-          y2="155%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
           x="90%"
-          y="155%"
+          y="135%"
         >
           -1
         </text>
@@ -86,10 +311,10 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
@@ -97,16 +322,16 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
       <g>
         <line
           stroke="black"
-          x1="30%"
-          x2="30%"
-          y1="150%"
-          y2="155%"
+          x1="36.666666666666664%"
+          x2="36.666666666666664%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="15.000000000000007%"
-          y="155%"
+          x="23.33333333333334%"
+          y="135%"
         >
           -3
         </text>
@@ -114,16 +339,16 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
       <g>
         <line
           stroke="black"
-          x1="63.75%"
-          x2="63.75%"
-          y1="150%"
-          y2="155%"
+          x1="66.66666666666667%"
+          x2="66.66666666666667%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="48.75000000000001%"
-          y="155%"
+          x="53.33333333333334%"
+          y="135%"
         >
           -2
         </text>
@@ -131,16 +356,16 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
       <g>
         <line
           stroke="black"
-          x1="97.50000000000001%"
-          x2="97.50000000000001%"
-          y1="150%"
-          y2="155%"
+          x1="96.66666666666669%"
+          x2="96.66666666666669%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="82.5%"
-          y="155%"
+          x="83.33333333333334%"
+          y="135%"
         >
           -1
         </text>
@@ -161,10 +386,10 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
@@ -172,16 +397,16 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
       <g>
         <line
           stroke="black"
-          x1="0%"
-          x2="0%"
-          y1="150%"
-          y2="155%"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="0%"
-          y="155%"
+          x="10%"
+          y="135%"
         >
           -3
         </text>
@@ -189,16 +414,16 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
       <g>
         <line
           stroke="black"
-          x1="45%"
-          x2="45%"
-          y1="150%"
-          y2="155%"
+          x1="50%"
+          x2="50%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="45%"
-          y="155%"
+          x="50%"
+          y="135%"
         >
           -2
         </text>
@@ -208,14 +433,14 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
           stroke="black"
           x1="90%"
           x2="90%"
-          y1="150%"
-          y2="155%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
           x="90%"
-          y="155%"
+          y="135%"
         >
           -1
         </text>
@@ -236,10 +461,10 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
@@ -247,16 +472,16 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
       <g>
         <line
           stroke="black"
-          x1="0%"
-          x2="0%"
-          y1="150%"
-          y2="155%"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="0%"
-          y="155%"
+          x="10%"
+          y="135%"
         >
           0
         </text>
@@ -264,16 +489,16 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
       <g>
         <line
           stroke="black"
-          x1="45%"
-          x2="45%"
-          y1="150%"
-          y2="155%"
+          x1="50%"
+          x2="50%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="45%"
-          y="155%"
+          x="50%"
+          y="135%"
         >
           1
         </text>
@@ -283,14 +508,14 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
           stroke="black"
           x1="90%"
           x2="90%"
-          y1="150%"
-          y2="155%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
           x="90%"
-          y="155%"
+          y="135%"
         >
           2
         </text>
@@ -311,10 +536,10 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
@@ -322,16 +547,16 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
       <g>
         <line
           stroke="black"
-          x1="30%"
-          x2="30%"
-          y1="150%"
-          y2="155%"
+          x1="36.666666666666664%"
+          x2="36.666666666666664%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="15%"
-          y="155%"
+          x="23.333333333333332%"
+          y="135%"
         >
           0
         </text>
@@ -339,16 +564,16 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
       <g>
         <line
           stroke="black"
-          x1="63.75%"
-          x2="63.75%"
-          y1="150%"
-          y2="155%"
+          x1="66.66666666666667%"
+          x2="66.66666666666667%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="48.75000000000001%"
-          y="155%"
+          x="53.33333333333334%"
+          y="135%"
         >
           1
         </text>
@@ -356,16 +581,16 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
       <g>
         <line
           stroke="black"
-          x1="97.50000000000001%"
-          x2="97.50000000000001%"
-          y1="150%"
-          y2="155%"
+          x1="96.66666666666669%"
+          x2="96.66666666666669%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="82.5%"
-          y="155%"
+          x="83.33333333333334%"
+          y="135%"
         >
           2
         </text>
@@ -386,10 +611,10 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
@@ -397,16 +622,16 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
       <g>
         <line
           stroke="black"
-          x1="0%"
-          x2="0%"
-          y1="150%"
-          y2="155%"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="0%"
-          y="155%"
+          x="10%"
+          y="135%"
         >
           0
         </text>
@@ -414,16 +639,16 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
       <g>
         <line
           stroke="black"
-          x1="45%"
-          x2="45%"
-          y1="150%"
-          y2="155%"
+          x1="50%"
+          x2="50%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="45%"
-          y="155%"
+          x="50%"
+          y="135%"
         >
           1
         </text>
@@ -433,14 +658,14 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
           stroke="black"
           x1="90%"
           x2="90%"
-          y1="150%"
-          y2="155%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
           x="90%"
-          y="155%"
+          y="135%"
         >
           2
         </text>
@@ -461,10 +686,10 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
@@ -472,16 +697,16 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       <g>
         <line
           stroke="black"
-          x1="0%"
-          x2="0%"
-          y1="150%"
-          y2="155%"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="0%"
-          y="155%"
+          x="10%"
+          y="135%"
         >
           -2
         </text>
@@ -489,16 +714,16 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       <g>
         <line
           stroke="black"
-          x1="22.5%"
-          x2="22.5%"
-          y1="150%"
-          y2="155%"
+          x1="30%"
+          x2="30%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="22.5%"
-          y="155%"
+          x="30%"
+          y="135%"
         >
           -1
         </text>
@@ -508,14 +733,14 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
           stroke="black"
           x1="90%"
           x2="90%"
-          y1="150%"
-          y2="155%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
           x="90%"
-          y="155%"
+          y="135%"
         >
           2
         </text>
@@ -536,10 +761,10 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
@@ -547,16 +772,16 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       <g>
         <line
           stroke="black"
-          x1="30%"
-          x2="30%"
-          y1="150%"
-          y2="155%"
+          x1="36.666666666666664%"
+          x2="36.666666666666664%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="15%"
-          y="155%"
+          x="23.333333333333332%"
+          y="135%"
         >
           -2
         </text>
@@ -564,16 +789,16 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       <g>
         <line
           stroke="black"
-          x1="46.875%"
-          x2="46.875%"
-          y1="150%"
-          y2="155%"
+          x1="51.66666666666667%"
+          x2="51.66666666666667%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="31.875%"
-          y="155%"
+          x="38.333333333333336%"
+          y="135%"
         >
           -1
         </text>
@@ -581,16 +806,16 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       <g>
         <line
           stroke="black"
-          x1="97.50000000000001%"
-          x2="97.50000000000001%"
-          y1="150%"
-          y2="155%"
+          x1="96.66666666666669%"
+          x2="96.66666666666669%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="82.5%"
-          y="155%"
+          x="83.33333333333334%"
+          y="135%"
         >
           2
         </text>
@@ -611,10 +836,10 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
@@ -622,16 +847,16 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       <g>
         <line
           stroke="black"
-          x1="0%"
-          x2="0%"
-          y1="150%"
-          y2="155%"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="0%"
-          y="155%"
+          x="10%"
+          y="135%"
         >
           -2
         </text>
@@ -639,16 +864,16 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       <g>
         <line
           stroke="black"
-          x1="22.5%"
-          x2="22.5%"
-          y1="150%"
-          y2="155%"
+          x1="30%"
+          x2="30%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="22.5%"
-          y="155%"
+          x="30%"
+          y="135%"
         >
           -1
         </text>
@@ -658,239 +883,14 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
           stroke="black"
           x1="90%"
           x2="90%"
-          y1="150%"
-          y2="155%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
           x="90%"
-          y="155%"
-        >
-          2
-        </text>
-      </g>
-    </g>
-  </svg>
-</div>
-`;
-
-exports[`XAxis it renders consistently with default tick placement 1`] = `
-<div
-  className="XAxis"
->
-  <svg
-    className="XAxis__Svg"
-  >
-    <line
-      fill="transparent"
-      stroke="black"
-      strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
-    />
-    <g
-      className="XAxis__Ticks"
-    >
-      <g>
-        <line
-          stroke="black"
-          x1="0%"
-          x2="0%"
-          y1="150%"
-          y2="155%"
-        />
-        <text
-          className="XAxis__TickLabels"
-          stroke="black"
-          x="0%"
-          y="155%"
-        >
-          0
-        </text>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="45%"
-          x2="45%"
-          y1="150%"
-          y2="155%"
-        />
-        <text
-          className="XAxis__TickLabels"
-          stroke="black"
-          x="45%"
-          y="155%"
-        >
-          1
-        </text>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="90%"
-          x2="90%"
-          y1="150%"
-          y2="155%"
-        />
-        <text
-          className="XAxis__TickLabels"
-          stroke="black"
-          x="90%"
-          y="155%"
-        >
-          2
-        </text>
-      </g>
-    </g>
-  </svg>
-</div>
-`;
-
-exports[`XAxis it renders consistently with explicit bucket tick placement 1`] = `
-<div
-  className="XAxis"
->
-  <svg
-    className="XAxis__Svg"
-  >
-    <line
-      fill="transparent"
-      stroke="black"
-      strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
-    />
-    <g
-      className="XAxis__Ticks"
-    >
-      <g>
-        <line
-          stroke="black"
-          x1="30%"
-          x2="30%"
-          y1="150%"
-          y2="155%"
-        />
-        <text
-          className="XAxis__TickLabels"
-          stroke="black"
-          x="15%"
-          y="155%"
-        >
-          0
-        </text>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="63.75%"
-          x2="63.75%"
-          y1="150%"
-          y2="155%"
-        />
-        <text
-          className="XAxis__TickLabels"
-          stroke="black"
-          x="48.75000000000001%"
-          y="155%"
-        >
-          1
-        </text>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="97.50000000000001%"
-          x2="97.50000000000001%"
-          y1="150%"
-          y2="155%"
-        />
-        <text
-          className="XAxis__TickLabels"
-          stroke="black"
-          x="82.5%"
-          y="155%"
-        >
-          2
-        </text>
-      </g>
-    </g>
-  </svg>
-</div>
-`;
-
-exports[`XAxis it renders consistently with explicit inline tick placement 1`] = `
-<div
-  className="XAxis"
->
-  <svg
-    className="XAxis__Svg"
-  >
-    <line
-      fill="transparent"
-      stroke="black"
-      strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="150%"
-      y2="150%"
-    />
-    <g
-      className="XAxis__Ticks"
-    >
-      <g>
-        <line
-          stroke="black"
-          x1="0%"
-          x2="0%"
-          y1="150%"
-          y2="155%"
-        />
-        <text
-          className="XAxis__TickLabels"
-          stroke="black"
-          x="0%"
-          y="155%"
-        >
-          0
-        </text>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="45%"
-          x2="45%"
-          y1="150%"
-          y2="155%"
-        />
-        <text
-          className="XAxis__TickLabels"
-          stroke="black"
-          x="45%"
-          y="155%"
-        >
-          1
-        </text>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="90%"
-          x2="90%"
-          y1="150%"
-          y2="155%"
-        />
-        <text
-          className="XAxis__TickLabels"
-          stroke="black"
-          x="90%"
-          y="155%"
+          y="135%"
         >
           2
         </text>
