@@ -1,4 +1,4 @@
-import Placement from "../../enums/Placement";
+import Placement from '../../enums/Placement';
 
 export interface SeriesDataPoint {
     x: number;

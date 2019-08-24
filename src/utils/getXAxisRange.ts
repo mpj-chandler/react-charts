@@ -1,7 +1,7 @@
-import { AxisConfig, AxisRange, SeriesData, SeriesDataPoint } from "../components/BarChart/types";
-import Placement from "../enums/Placement";
-import { applyAxisConfig } from "./applyAxisConfig";
-import { applyBucketPlacement } from "./applyBucketPlacement";
+import { AxisConfig, AxisRange, SeriesData, SeriesDataPoint } from '../components/BarChart/types';
+import Placement from '../enums/Placement';
+import { applyAxisConfig } from './applyAxisConfig';
+import { applyBucketPlacement } from './applyBucketPlacement';
 
 
 export function getXAxisRange(data: SeriesData[], config?: AxisConfig) {

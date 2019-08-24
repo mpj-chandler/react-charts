@@ -1,6 +1,7 @@
-const React = require('react')
+const React = require('react');
 
-global.window = global
-window.requestAnimationFrame = jest.fn()
+global.window = global;
+window.requestAnimationFrame = jest.fn();
+global.cancelAnimationFrame = jest.fn();
 
-module.exports = React
+module.exports = React;

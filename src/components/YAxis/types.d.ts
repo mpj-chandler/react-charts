@@ -1,4 +1,4 @@
-import { AxisConfig, SeriesData } from "../BarChart/types";
+import { AxisConfig, SeriesData } from '../BarChart/types';
 
 export interface AxisRange {
     min: number;

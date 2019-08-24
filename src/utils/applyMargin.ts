@@ -1,4 +1,4 @@
-import { AxisRange } from "../components/BarChart/types";
+import { AxisRange } from '../components/BarChart/types';
 
 export function applyMargin(range: AxisRange, margin: number) {
     if (range.max <= 0) {

@@ -1,4 +1,4 @@
-import { AxisRange } from "../components/BarChart/types";
+import { AxisRange } from '../components/BarChart/types';
 
 export function applyZeroIntercept(range: AxisRange) {
     if (range.min > 0) {

@@ -14,7 +14,9 @@
             "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
         },
         "interface-name": [true, "never-prefix"],
-        "object-literal-sort-keys": false
+        "object-literal-sort-keys": false,
+        "quotemark": [true, "single", "jsx-double"],
+        "ordered-imports": false
     },
     "jsRules": {
         "max-line-length": {

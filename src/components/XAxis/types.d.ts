@@ -1,4 +1,4 @@
-import { AxisConfig, Padding, SeriesData } from "../BarChart/types";
+import { AxisConfig, Padding, SeriesData } from '../BarChart/types';
 
 export interface XAxisTickProps {
     data: SeriesData[];

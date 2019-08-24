@@ -1,9 +1,9 @@
-import { getXAxisRange } from "./getXAxisRange";
+import { getXAxisRange } from './getXAxisRange';
 
-describe("getXAxisRange", () => {
+describe('getXAxisRange', () => {
     const data = [
         {
-            seriesName: "A",
+            seriesName: 'A',
             points: [
                 {
                     x: 0,
@@ -21,16 +21,16 @@ describe("getXAxisRange", () => {
         },
     ];
 
-    describe("When not provided with a config object", () => {
-        it("it extracts the series maximum and minimum correctly", () => {
+    describe('When not provided with a config object', () => {
+        it('it extracts the series maximum and minimum correctly', () => {
             const range = getXAxisRange(data);
 
             expect(range).toStrictEqual({ max: 2, min: 0 });
         });
     });
 
-    describe("When provided with a config object", () => {
-        it("it extracts the series maximum and minimum correctly", () => {
+    describe('When provided with a config object', () => {
+        it('it extracts the series maximum and minimum correctly', () => {
             const range = getXAxisRange(data, { zeroIntercept: false, margin: 400 });
 
             expect(range).toStrictEqual({ max: 10, min: 0 });

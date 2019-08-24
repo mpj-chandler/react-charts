@@ -1,5 +1,5 @@
-import { AxisConfig, AxisRange, SeriesData, SeriesDataPoint } from "../components/BarChart/types";
-import { applyAxisConfig } from "./applyAxisConfig";
+import { AxisConfig, AxisRange, SeriesData, SeriesDataPoint } from '../components/BarChart/types';
+import { applyAxisConfig } from './applyAxisConfig';
 
 export function getYAxisRange(data: SeriesData[], config?: AxisConfig) {
     const yValues: number[] = data[0].points.map((point: SeriesDataPoint) => point.y);

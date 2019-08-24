@@ -1,13 +1,13 @@
-import { AxisConfig } from "../components/BarChart/types";
-import Placement from "../enums/Placement";
-import { applyAxisConfig } from "./applyAxisConfig";
+import { AxisConfig } from '../components/BarChart/types';
+import Placement from '../enums/Placement';
+import { applyAxisConfig } from './applyAxisConfig';
 
-describe("ApplyAxisConfig", () => {
-    describe("When the range contains positive values only", () => {
+describe('ApplyAxisConfig', () => {
+    describe('When the range contains positive values only', () => {
         const range = { min: 50, max: 100};
 
-        describe("when the config requires a zero intercept", () => {
-            it("it transforms the config consistently", () => {
+        describe('when the config requires a zero intercept', () => {
+            it('it transforms the config consistently', () => {
                 const config: AxisConfig = {
                     zeroIntercept: true,
                     margin: 0,
@@ -20,8 +20,8 @@ describe("ApplyAxisConfig", () => {
             });
         });
 
-        describe("when the config requires a margin to be applied", () => {
-            it("it transforms the config consistently", () => {
+        describe('when the config requires a margin to be applied', () => {
+            it('it transforms the config consistently', () => {
                 const config: AxisConfig = {
                     zeroIntercept: false,
                     margin: 400,
@@ -33,19 +33,19 @@ describe("ApplyAxisConfig", () => {
             });
         });
 
-        describe("when there is no config", () => {
-            it("it returns the original range", () => {
+        describe('when there is no config', () => {
+            it('it returns the original range', () => {
                 const newRange = applyAxisConfig(range);
                 expect(newRange).toStrictEqual({ max: 100, min: 50 });
             });
         });
     });
 
-    describe("When the range contains negative values only", () => {
+    describe('When the range contains negative values only', () => {
         const range = { min: -100, max: -50};
 
-        describe("when the config requires a zero intercept", () => {
-            it("it transforms the config consistently", () => {
+        describe('when the config requires a zero intercept', () => {
+            it('it transforms the config consistently', () => {
                 const config: AxisConfig = {
                     zeroIntercept: true,
                     margin: 0,
@@ -58,8 +58,8 @@ describe("ApplyAxisConfig", () => {
             });
         });
 
-        describe("when the config requires a margin to be applied", () => {
-            it("it transforms the config consistently", () => {
+        describe('when the config requires a margin to be applied', () => {
+            it('it transforms the config consistently', () => {
                 const config: AxisConfig = {
                     zeroIntercept: false,
                     margin: 20,
@@ -71,19 +71,19 @@ describe("ApplyAxisConfig", () => {
             });
         });
 
-        describe("when there is no config", () => {
-            it("it returns the original range", () => {
+        describe('when there is no config', () => {
+            it('it returns the original range', () => {
                 const newRange = applyAxisConfig(range);
                 expect(newRange).toStrictEqual({ max: -50, min: -100 });
             });
         });
     });
 
-    describe("When the range contains positive and negative values", () => {
+    describe('When the range contains positive and negative values', () => {
         const range = { min: -100, max: 50};
 
-        describe("when the config requires a zero intercept", () => {
-            it("it transforms the config consistently", () => {
+        describe('when the config requires a zero intercept', () => {
+            it('it transforms the config consistently', () => {
                 const config: AxisConfig = {
                     zeroIntercept: true,
                     margin: 0,
@@ -96,8 +96,8 @@ describe("ApplyAxisConfig", () => {
             });
         });
 
-        describe("when the config requires a margin to be applied", () => {
-            it("it transforms the config consistently", () => {
+        describe('when the config requires a margin to be applied', () => {
+            it('it transforms the config consistently', () => {
                 const config: AxisConfig = {
                     zeroIntercept: true,
                     margin: 20,
@@ -109,8 +109,8 @@ describe("ApplyAxisConfig", () => {
             });
         });
 
-        describe("when there is no config", () => {
-            it("it returns the original range", () => {
+        describe('when there is no config', () => {
+            it('it returns the original range', () => {
                 const newRange = applyAxisConfig(range);
                 expect(newRange).toStrictEqual({ max: 50, min: -100 });
             });
