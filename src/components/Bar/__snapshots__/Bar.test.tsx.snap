@@ -1,6 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Bar it renders consistently with Placement set to Aligned 1`] = `
+exports[`Bar When all values on the yAxis are negative it renders consistently with Placement set to Aligned 1`] = `
+<rect
+  fill="anything"
+  height="NaN%"
+  stroke="anything"
+  width="100%"
+  x="-41%"
+  y="10%"
+/>
+`;
+
+exports[`Bar When all values on the yAxis are negative it renders consistently with Placement set to Bucket 1`] = `
+<rect
+  fill="anything"
+  height="NaN%"
+  stroke="anything"
+  width="100%"
+  x="-26%"
+  y="10%"
+/>
+`;
+
+exports[`Bar When all values on the yAxis are negative it renders consistently with defaults 1`] = `
+<rect
+  fill="anything"
+  height="NaN%"
+  stroke="anything"
+  width="100%"
+  x="-41%"
+  y="10%"
+/>
+`;
+
+exports[`Bar When all values on the yAxis are positive it renders consistently with Placement set to Aligned 1`] = `
 <rect
   fill="anything"
   height="0%"
@@ -11,7 +44,7 @@ exports[`Bar it renders consistently with Placement set to Aligned 1`] = `
 />
 `;
 
-exports[`Bar it renders consistently with Placement set to Bucket 1`] = `
+exports[`Bar When all values on the yAxis are positive it renders consistently with Placement set to Bucket 1`] = `
 <rect
   fill="anything"
   height="0%"
@@ -22,7 +55,7 @@ exports[`Bar it renders consistently with Placement set to Bucket 1`] = `
 />
 `;
 
-exports[`Bar it renders consistently with defaults 1`] = `
+exports[`Bar When all values on the yAxis are positive it renders consistently with defaults 1`] = `
 <rect
   fill="anything"
   height="0%"
@@ -30,5 +63,38 @@ exports[`Bar it renders consistently with defaults 1`] = `
   width="100%"
   x="-41%"
   y="100%"
+/>
+`;
+
+exports[`Bar When the yAxis spans positive and negative values it renders consistently with Placement set to Aligned 1`] = `
+<rect
+  fill="anything"
+  height="0%"
+  stroke="anything"
+  width="100%"
+  x="-41%"
+  y="50%"
+/>
+`;
+
+exports[`Bar When the yAxis spans positive and negative values it renders consistently with Placement set to Bucket 1`] = `
+<rect
+  fill="anything"
+  height="0%"
+  stroke="anything"
+  width="100%"
+  x="-26%"
+  y="50%"
+/>
+`;
+
+exports[`Bar When the yAxis spans positive and negative values it renders consistently with defaults 1`] = `
+<rect
+  fill="anything"
+  height="0%"
+  stroke="anything"
+  width="100%"
+  x="-41%"
+  y="50%"
 />
 `;

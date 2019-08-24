@@ -61,5 +61,109 @@ exports[`App it renders consistently 1`] = `
       Mock BarChart 
     </div>
   </div>
+  <div
+    className="App__SecondChartContainer"
+  >
+    <div
+      data={
+        Array [
+          Object {
+            "points": Array [
+              Object {
+                "x": 0,
+                "y": -10,
+              },
+              Object {
+                "x": 1,
+                "y": 20,
+              },
+              Object {
+                "x": 2,
+                "y": 30,
+              },
+            ],
+            "seriesName": "A",
+          },
+        ]
+      }
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      title="My second bar chart"
+      xAxisConfig={
+        Object {
+          "margin": 10,
+          "tickPlacement": 1,
+          "zeroIntercept": true,
+        }
+      }
+      yAxisConfig={
+        Object {
+          "margin": 10,
+          "tickPlacement": 0,
+          "zeroIntercept": true,
+        }
+      }
+    >
+      Mock BarChart 
+    </div>
+  </div>
+  <div
+    className="App__ThirdChartContainer"
+  >
+    <div
+      data={
+        Array [
+          Object {
+            "points": Array [
+              Object {
+                "x": 0,
+                "y": -10,
+              },
+              Object {
+                "x": 1,
+                "y": -20,
+              },
+              Object {
+                "x": 2,
+                "y": -30,
+              },
+            ],
+            "seriesName": "A",
+          },
+        ]
+      }
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      title="My third bar chart"
+      xAxisConfig={
+        Object {
+          "margin": 10,
+          "tickPlacement": 1,
+          "zeroIntercept": true,
+        }
+      }
+      yAxisConfig={
+        Object {
+          "margin": 10,
+          "tickPlacement": 0,
+          "zeroIntercept": true,
+        }
+      }
+    >
+      Mock BarChart 
+    </div>
+  </div>
 </div>
 `;

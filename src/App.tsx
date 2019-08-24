@@ -8,7 +8,7 @@ interface AppProps {
 }
 
 const App: React.FC<AppProps> = (props) => {
-    const barChartProps: BarChartProps = {
+    const firstBarChartProps: BarChartProps = {
         title: 'My first bar chart',
         data: [
             {
@@ -41,11 +41,86 @@ const App: React.FC<AppProps> = (props) => {
             tickPlacement: Placement.Aligned
         }
     }
+
+    const secondBarChartProps: BarChartProps = {
+        title: 'My second bar chart',
+        data: [
+            {
+                seriesName: 'A',
+                points: [
+                    {
+                        x: 0,
+                        y: -10
+                    },
+                    {
+                        x: 1,
+                        y: 20
+                    },
+                    {
+                        x: 2,
+                        y: 30
+                    }
+                ]
+            }
+        ],
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        xAxisConfig: {
+            zeroIntercept: true,
+            margin: 10,
+            tickPlacement: Placement.Bucket,
+        },
+        yAxisConfig: {
+            zeroIntercept: true,
+            margin: 10,
+            tickPlacement: Placement.Aligned
+        }
+    }
+
+    const thirdBarChartProps: BarChartProps = {
+        title: 'My third bar chart',
+        data: [
+            {
+                seriesName: 'A',
+                points: [
+                    {
+                        x: 0,
+                        y: -10
+                    },
+                    {
+                        x: 1,
+                        y: -20
+                    },
+                    {
+                        x: 2,
+                        y: -30
+                    }
+                ]
+            }
+        ],
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        xAxisConfig: {
+            zeroIntercept: true,
+            margin: 10,
+            tickPlacement: Placement.Bucket,
+        },
+        yAxisConfig: {
+            zeroIntercept: true,
+            margin: 10,
+            tickPlacement: Placement.Aligned
+        }
+    }
+
     return (
         <div className={styles.App} {...props}>
             <span className={styles.App__Title}>React Charts</span>
             <div className={styles.App__ChartContainer}>
-                <BarChart {...barChartProps}/>
+                <BarChart {...firstBarChartProps}/>
+            </div>
+            <div className={styles.App__SecondChartContainer}>
+                <BarChart {...secondBarChartProps}/>
+            </div>
+            <div className={styles.App__ThirdChartContainer}>
+                <BarChart {...thirdBarChartProps}/>
             </div>
         </div>
     );

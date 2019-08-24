@@ -4,7 +4,7 @@ import styles from './YAxis.scss';
 import { SeriesData, SeriesDataPoint, Padding, AxisProps } from '../BarChart/types';
 import { getYAxisRange } from '../../utils/getYAxisRange';
 
-const XAxis: React.FC<AxisProps> = (props) => {
+const YAxis: React.FC<AxisProps> = (props) => {
     const renderTicks: (props: YAxisTickProps) => JSX.Element = (props: YAxisTickProps) => {
         const tickLabels: number[] = props.data[0].points.map((point: SeriesDataPoint) => point.y)
         const range: AxisRange = getYAxisRange(props.data, props.config);
@@ -36,4 +36,4 @@ const XAxis: React.FC<AxisProps> = (props) => {
     )
 };
 
-export default XAxis;
+export default YAxis;
