@@ -1,8 +1,8 @@
 import Placement from '../../enums/Placement';
 
 export interface SeriesDataPoint {
-    x: number;
-    y: number;
+    x: number | null;
+    y: number | null;
 }
 
 export interface SeriesData {

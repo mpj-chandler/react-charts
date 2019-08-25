@@ -1,9 +1,10 @@
 import { AxisConfig, AxisRange, SeriesData, SeriesDataPoint } from '../components/BarChart/types';
 import { applyAxisConfig } from './applyAxisConfig';
+import extractMaximumAndMinimum from './extractMaximumAndMinimum';
+import Axis from '../enums/Axis';
 
 export function getYAxisRange(data: SeriesData[], config?: AxisConfig) {
-    const yValues: number[] = data[0].points.map((point: SeriesDataPoint) => point.y);
-    let range: AxisRange = { min: Math.min(...yValues), max: Math.max(...yValues) };
+    let range: AxisRange = extractMaximumAndMinimum(data, Axis.YAxis);
 
     if (config) {
         range = applyAxisConfig(range, config);

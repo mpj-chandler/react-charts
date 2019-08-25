@@ -30,4 +30,4 @@ describe('onFrame', () => {
         expect(loop).not.toHaveBeenCalled();
         expect(mockSetTime).not.toHaveBeenCalled();
     });
-})
+});

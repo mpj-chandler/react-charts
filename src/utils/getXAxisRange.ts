@@ -2,11 +2,12 @@ import { AxisConfig, AxisRange, SeriesData, SeriesDataPoint } from '../component
 import Placement from '../enums/Placement';
 import { applyAxisConfig } from './applyAxisConfig';
 import { applyBucketPlacement } from './applyBucketPlacement';
+import extractMaximumAndMinimum from './extractMaximumAndMinimum';
+import Axis from '../enums/Axis';
 
 
 export function getXAxisRange(data: SeriesData[], config?: AxisConfig) {
-    const xValues: number[] = data[0].points.map((point: SeriesDataPoint) => point.x);
-    let range: AxisRange = { min: Math.min(...xValues), max: Math.max(...xValues) };
+    let range: AxisRange = extractMaximumAndMinimum(data, Axis.XAxis);
 
     if (config) {
         if (config.tickPlacement === Placement.Bucket) {

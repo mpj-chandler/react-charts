@@ -7,6 +7,6 @@ function onFrame(start: number, duration: number, setTime: React.Dispatch<React.
             loop(onFrame(start, duration, setTime));
         }
     };
-};
+}
 
 export default onFrame;
