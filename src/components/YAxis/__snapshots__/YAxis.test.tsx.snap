@@ -11,10 +11,10 @@ exports[`YAxis it renders consistently 1`] = `
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="100%"
-      x2="100%"
+      x1="10%"
+      x2="10%"
       y1="10%"
-      y2="100%"
+      y2="90%"
     />
     <g
       className="YAxis__Ticks"
@@ -22,16 +22,16 @@ exports[`YAxis it renders consistently 1`] = `
       <g>
         <line
           stroke="black"
-          x1="90%"
-          x2="100%"
-          y1="100%"
-          y2="100%"
+          x1="5%"
+          x2="10%"
+          y1="90%"
+          y2="90%"
         />
         <text
           className="YAxis__TickLabels"
           stroke="black"
-          x="60%"
-          y="95%"
+          x="5%"
+          y="90%"
         >
           10
         </text>
@@ -39,16 +39,16 @@ exports[`YAxis it renders consistently 1`] = `
       <g>
         <line
           stroke="black"
-          x1="90%"
-          x2="100%"
-          y1="55%"
-          y2="55%"
+          x1="5%"
+          x2="10%"
+          y1="50%"
+          y2="50%"
         />
         <text
           className="YAxis__TickLabels"
           stroke="black"
-          x="60%"
-          y="55%"
+          x="5%"
+          y="50%"
         >
           20
         </text>
@@ -56,15 +56,90 @@ exports[`YAxis it renders consistently 1`] = `
       <g>
         <line
           stroke="black"
-          x1="90%"
-          x2="100%"
+          x1="5%"
+          x2="10%"
           y1="10%"
           y2="10%"
         />
         <text
           className="YAxis__TickLabels"
           stroke="black"
-          x="60%"
+          x="5%"
+          y="10%"
+        >
+          30
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`YAxis it renders consistently with an explicit config 1`] = `
+<div
+  className="YAxis"
+>
+  <svg
+    className="YAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="10%"
+      y1="10%"
+      y2="90%"
+    />
+    <g
+      className="YAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="NaN%"
+          x2="10%"
+          y1="90%"
+          y2="90%"
+        />
+        <text
+          className="YAxis__TickLabels"
+          stroke="black"
+          x="NaN%"
+          y="90%"
+        >
+          10
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="NaN%"
+          x2="10%"
+          y1="50%"
+          y2="50%"
+        />
+        <text
+          className="YAxis__TickLabels"
+          stroke="black"
+          x="NaN%"
+          y="50%"
+        >
+          20
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="NaN%"
+          x2="10%"
+          y1="10%"
+          y2="10%"
+        />
+        <text
+          className="YAxis__TickLabels"
+          stroke="black"
+          x="NaN%"
           y="10%"
         >
           30

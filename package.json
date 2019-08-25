@@ -12,6 +12,7 @@
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.1",
     "@babel/plugin-syntax-import-meta": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
@@ -49,11 +50,13 @@
     "source-map-loader": "^0.2.4",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
+    "tslint": "^5.19.0",
     "typescript": "^3.5.3",
     "url-loader": "^2.0.1",
     "webpack-cli": "^3.3.5"
   },
   "dependencies": {
+    "@babel/runtime": "^7.5.5",
     "@types/eslint": "^4.16.6",
     "@types/react-dom": "^16.8.4",
     "@types/webpack-env": "^1.13.9",
@@ -76,9 +79,12 @@
     "bundle": "webpack",
     "start": "webpack-dev-server",
     "test": "jest --coverage",
-    "test:watch": "jest --watch --coverage"
+    "test:watch": "jest --watch --coverage",
+    "lint:ts": "tslint --fix 'src/**/*.ts'"
   },
   "jest": {
-    "setupFilesAfterEnv": ["./setupTests.js"]
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
   }
 }

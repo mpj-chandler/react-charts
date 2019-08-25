@@ -10,3 +10,4 @@ export function getEasingFunction(name: string) {
             throw new Error(`Easing function ${name} not recognised!`);
     }
 }
+

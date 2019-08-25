@@ -1,6 +1,6 @@
 enum Placement {
     Aligned,
-    Bucket
+    Bucket,
 }
 
 export default Placement;

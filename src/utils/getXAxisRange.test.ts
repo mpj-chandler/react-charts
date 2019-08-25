@@ -7,20 +7,20 @@ describe('getXAxisRange', () => {
             points: [
                 {
                     x: 0,
-                    y: 10
+                    y: 10,
                 },
                 {
                     x: 1,
-                    y: 20
+                    y: 20,
                 },
                 {
                     x: 2,
-                    y: 30
-                }
-            ]
-        }
+                    y: 30,
+                },
+            ],
+        },
     ];
-    
+
     describe('When not provided with a config object', () => {
         it('it extracts the series maximum and minimum correctly', () => {
             const range = getXAxisRange(data);

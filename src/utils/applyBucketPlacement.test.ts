@@ -1,5 +1,5 @@
-import { applyBucketPlacement } from './applyBucketPlacement';
 import { AxisRange } from '../components/BarChart/types';
+import { applyBucketPlacement } from './applyBucketPlacement';
 
 describe('applyBucketPlacement', () => {
     const min = 10;

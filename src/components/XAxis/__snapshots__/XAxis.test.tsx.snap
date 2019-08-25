@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`XAxis it renders consistently with default tick placement 1`] = `
+exports[`XAxis When XAxis is rendered above the chart it renders consistently with default tick placement 1`] = `
 <div
   className="XAxis"
 >
@@ -11,10 +11,10 @@ exports[`XAxis it renders consistently with default tick placement 1`] = `
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="0%"
-      y2="0%"
+      x1="10%"
+      x2="95%"
+      y1="10%"
+      y2="10%"
     />
     <g
       className="XAxis__Ticks"
@@ -22,16 +22,466 @@ exports[`XAxis it renders consistently with default tick placement 1`] = `
       <g>
         <line
           stroke="black"
-          x1="0%"
-          x2="0%"
-          y1="0%"
-          y2="10%"
+          x1="10%"
+          x2="10%"
+          y1="10%"
+          y2="7.5%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="0%"
-          y="25%"
+          x="10%"
+          y="7.5%"
+        >
+          1
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="50%"
+          x2="50%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="50%"
+          y="7.5%"
+        >
+          2
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="90%"
+          x2="90%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="90%"
+          y="7.5%"
+        >
+          3
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis is rendered above the chart it renders consistently with explicit bucket tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="10%"
+      y2="10%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="36.666666666666664%"
+          x2="36.666666666666664%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="23.333333333333332%"
+          y="7.5%"
+        >
+          1
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="66.66666666666667%"
+          x2="66.66666666666667%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="53.33333333333334%"
+          y="7.5%"
+        >
+          2
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="96.66666666666669%"
+          x2="96.66666666666669%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="83.33333333333334%"
+          y="7.5%"
+        >
+          3
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis is rendered above the chart it renders consistently with explicit inline tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="10%"
+      y2="10%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="10%"
+          x2="10%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="10%"
+          y="7.5%"
+        >
+          1
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="50%"
+          x2="50%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="50%"
+          y="7.5%"
+        >
+          2
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="90%"
+          x2="90%"
+          y1="10%"
+          y2="7.5%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="90%"
+          y="7.5%"
+        >
+          3
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis values are all negative it renders consistently with default tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="10%"
+          y="135%"
+        >
+          -3
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="50%"
+          x2="50%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="50%"
+          y="135%"
+        >
+          -2
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="90%"
+          x2="90%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="90%"
+          y="135%"
+        >
+          -1
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis values are all negative it renders consistently with explicit bucket tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="36.666666666666664%"
+          x2="36.666666666666664%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="23.33333333333334%"
+          y="135%"
+        >
+          -3
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="66.66666666666667%"
+          x2="66.66666666666667%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="53.33333333333334%"
+          y="135%"
+        >
+          -2
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="96.66666666666669%"
+          x2="96.66666666666669%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="83.33333333333334%"
+          y="135%"
+        >
+          -1
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis values are all negative it renders consistently with explicit inline tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="10%"
+          y="135%"
+        >
+          -3
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="50%"
+          x2="50%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="50%"
+          y="135%"
+        >
+          -2
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="90%"
+          x2="90%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="90%"
+          y="135%"
+        >
+          -1
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis values are all positive it renders consistently with default tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="10%"
+          y="135%"
         >
           0
         </text>
@@ -39,16 +489,16 @@ exports[`XAxis it renders consistently with default tick placement 1`] = `
       <g>
         <line
           stroke="black"
-          x1="45%"
-          x2="45%"
-          y1="0%"
-          y2="10%"
+          x1="50%"
+          x2="50%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="45%"
-          y="25%"
+          x="50%"
+          y="135%"
         >
           1
         </text>
@@ -58,14 +508,14 @@ exports[`XAxis it renders consistently with default tick placement 1`] = `
           stroke="black"
           x1="90%"
           x2="90%"
-          y1="0%"
-          y2="10%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
           x="90%"
-          y="25%"
+          y="135%"
         >
           2
         </text>
@@ -75,7 +525,7 @@ exports[`XAxis it renders consistently with default tick placement 1`] = `
 </div>
 `;
 
-exports[`XAxis it renders consistently with explicit bucket tick placement 1`] = `
+exports[`XAxis When XAxis values are all positive it renders consistently with explicit bucket tick placement 1`] = `
 <div
   className="XAxis"
 >
@@ -86,61 +536,211 @@ exports[`XAxis it renders consistently with explicit bucket tick placement 1`] =
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="0%"
-      y2="0%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
     >
+      <g>
+        <line
+          stroke="black"
+          x1="36.666666666666664%"
+          x2="36.666666666666664%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="23.333333333333332%"
+          y="135%"
+        >
+          0
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="66.66666666666667%"
+          x2="66.66666666666667%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="53.33333333333334%"
+          y="135%"
+        >
+          1
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="96.66666666666669%"
+          x2="96.66666666666669%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="83.33333333333334%"
+          y="135%"
+        >
+          2
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis values are all positive it renders consistently with explicit inline tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="10%"
+          y="135%"
+        >
+          0
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="50%"
+          x2="50%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="50%"
+          y="135%"
+        >
+          1
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="90%"
+          x2="90%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="90%"
+          y="135%"
+        >
+          2
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis values span negative and positive values it renders consistently with default tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="10%"
+          y="135%"
+        >
+          -2
+        </text>
+      </g>
       <g>
         <line
           stroke="black"
           x1="30%"
           x2="30%"
-          y1="0%"
-          y2="10%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="15%"
-          y="25%"
+          x="30%"
+          y="135%"
         >
-          0
+          -1
         </text>
       </g>
       <g>
         <line
           stroke="black"
-          x1="63.75%"
-          x2="63.75%"
-          y1="0%"
-          y2="10%"
+          x1="90%"
+          x2="90%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="48.75000000000001%"
-          y="25%"
-        >
-          1
-        </text>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="97.50000000000001%"
-          x2="97.50000000000001%"
-          y1="0%"
-          y2="10%"
-        />
-        <text
-          className="XAxis__TickLabels"
-          stroke="black"
-          x="82.5%"
-          y="25%"
+          x="90%"
+          y="135%"
         >
           2
         </text>
@@ -150,7 +750,7 @@ exports[`XAxis it renders consistently with explicit bucket tick placement 1`] =
 </div>
 `;
 
-exports[`XAxis it renders consistently with explicit inline tick placement 1`] = `
+exports[`XAxis When XAxis values span negative and positive values it renders consistently with explicit bucket tick placement 1`] = `
 <div
   className="XAxis"
 >
@@ -161,10 +761,10 @@ exports[`XAxis it renders consistently with explicit inline tick placement 1`] =
       fill="transparent"
       stroke="black"
       strokeWidth={1}
-      x1="0%"
-      x2="100%"
-      y1="0%"
-      y2="0%"
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
     />
     <g
       className="XAxis__Ticks"
@@ -172,35 +772,110 @@ exports[`XAxis it renders consistently with explicit inline tick placement 1`] =
       <g>
         <line
           stroke="black"
-          x1="0%"
-          x2="0%"
-          y1="0%"
-          y2="10%"
+          x1="36.666666666666664%"
+          x2="36.666666666666664%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="0%"
-          y="25%"
+          x="23.333333333333332%"
+          y="135%"
         >
-          0
+          -2
         </text>
       </g>
       <g>
         <line
           stroke="black"
-          x1="45%"
-          x2="45%"
-          y1="0%"
-          y2="10%"
+          x1="51.66666666666667%"
+          x2="51.66666666666667%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
-          x="45%"
-          y="25%"
+          x="38.333333333333336%"
+          y="135%"
         >
-          1
+          -1
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="96.66666666666669%"
+          x2="96.66666666666669%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="83.33333333333334%"
+          y="135%"
+        >
+          2
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`XAxis When XAxis values span negative and positive values it renders consistently with explicit inline tick placement 1`] = `
+<div
+  className="XAxis"
+>
+  <svg
+    className="XAxis__Svg"
+  >
+    <line
+      fill="transparent"
+      stroke="black"
+      strokeWidth={1}
+      x1="10%"
+      x2="95%"
+      y1="130%"
+      y2="130%"
+    />
+    <g
+      className="XAxis__Ticks"
+    >
+      <g>
+        <line
+          stroke="black"
+          x1="10%"
+          x2="10%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="10%"
+          y="135%"
+        >
+          -2
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="30%"
+          x2="30%"
+          y1="130%"
+          y2="135%"
+        />
+        <text
+          className="XAxis__TickLabels"
+          stroke="black"
+          x="30%"
+          y="135%"
+        >
+          -1
         </text>
       </g>
       <g>
@@ -208,14 +883,14 @@ exports[`XAxis it renders consistently with explicit inline tick placement 1`] =
           stroke="black"
           x1="90%"
           x2="90%"
-          y1="0%"
-          y2="10%"
+          y1="130%"
+          y2="135%"
         />
         <text
           className="XAxis__TickLabels"
           stroke="black"
           x="90%"
-          y="25%"
+          y="135%"
         >
           2
         </text>

@@ -33,4 +33,5 @@ export interface AxisConfig {
     zeroIntercept: boolean;
     margin: number;
     tickPlacement: Placement;
+    tickLength: number;
 }

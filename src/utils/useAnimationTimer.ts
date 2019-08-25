@@ -1,42 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { setupAnimation } from './setupAnimation';
 
+export function useAnimationTimer(duration: number, delay: number) {
 
-export function useAnimationTimer(duration = 1000, delay = 0) {
     const [elapsed, setTime] = useState(0);
 
     useEffect(() => {
-        let animationFrame: number;
-        let timerStop: any;
-        let start: number;
-
-        function onFrame() {
-            setTime(Date.now() - start);
-            loop();
-        }
-
-        function loop() {
-            animationFrame = requestAnimationFrame(onFrame);
-        }
-
-        function onStart() {
-            timerStop = setTimeout(() => {
-                cancelAnimationFrame(animationFrame);
-                setTime(Date.now() - start);
-            }, duration);
-
-            start = Date.now();
-            loop();
-        }
-
-        const timerDelay = setTimeout(onStart, delay);
-
-        return () => {
-            clearTimeout(timerStop);
-            clearTimeout(timerDelay);
-            cancelAnimationFrame(animationFrame);
-        };
+        setupAnimation(setTime, duration, delay);
     },
-    [duration, delay]
+    [duration, delay],
     );
 
     return  elapsed;
