@@ -5,7 +5,9 @@ import { AxisProps, AxisRange, SeriesDataPoint } from '../BarChart/types';
 import { getXAxisRange } from '../../utils/axisUtils/getXAxisRange/getXAxisRange';
 import { getYAxisRange } from '../../utils/axisUtils/getYAxisRange/getYAxisRange';
 import Placement from '../../enums/Placement';
-import AutoSizeTextBox from '../AxisTickLabel/AutoSizeTextBox';
+import AxisTickLabel from '../AxisTickLabel/AxisTickLabel';
+import Axis from '../../enums/Axis';
+import generateAxisLabels from '../../utils/axisUtils/generateAxisLabels/generateAxisLabels';
 
 function getTickXPosition(props: XAxisTickProps, label: number) {
     const range = getXAxisRange(props.data, props.config);
@@ -56,32 +58,29 @@ function renderTick(
                 y2={`${y2}%`}
                 stroke={'black'}
             />
-            <AutoSizeTextBox
+            <AxisTickLabel
                 key={`tickText-${label}`}
                 xPos={textXPos}
                 yPos={y2}
                 label={label}
+                axis={Axis.XAxis}
             />
         </g>
     );
 }
 
-function generateTickLabels(points: SeriesDataPoint[]) {
-    return points.map((point: SeriesDataPoint) => point.x);
-}
-
 function renderTicks(props: XAxisTickProps, y1: number) {
     const points: SeriesDataPoint[] = props.data[0].points;
-    const tickLabels: Array<number | null> = generateTickLabels(points);
+    const tickLabels: string[] = generateAxisLabels(props.data, Axis.XAxis);
 
     return (
         <g className={styles.XAxis__Ticks}>
-            {tickLabels.map((label: number | null) => {
+            {tickLabels.map((label: string) => {
                 if (label !== null) {
-                    const x1 = getTickXPosition(props, label);
-                    const textXPos = getTickTextXPosition(x1, props, label);
+                    const x1 = getTickXPosition(props, Number(label));
+                    const textXPos = getTickTextXPosition(x1, props, Number(label));
 
-                    return renderTick(label, x1, y1, props, textXPos);
+                    return renderTick(Number(label), x1, y1, props, textXPos);
                 }
             })}
         </g>

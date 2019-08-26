@@ -27,14 +27,14 @@ exports[`YAxis it renders consistently 1`] = `
           y1="130%"
           y2="130%"
         />
-        <text
-          className="YAxis__TickLabels"
-          stroke="black"
-          x="5%"
-          y="130%"
+        <div
+          axis={1}
+          label={0}
+          xPos={5}
+          yPos={130}
         >
-          0
-        </text>
+          MockAxisTickLabel 
+        </div>
       </g>
       <g>
         <line
@@ -44,14 +44,14 @@ exports[`YAxis it renders consistently 1`] = `
           y1="90%"
           y2="90%"
         />
-        <text
-          className="YAxis__TickLabels"
-          stroke="black"
-          x="5%"
-          y="90%"
+        <div
+          axis={1}
+          label={10}
+          xPos={5}
+          yPos={90}
         >
-          10
-        </text>
+          MockAxisTickLabel 
+        </div>
       </g>
       <g>
         <line
@@ -61,14 +61,14 @@ exports[`YAxis it renders consistently 1`] = `
           y1="50%"
           y2="50%"
         />
-        <text
-          className="YAxis__TickLabels"
-          stroke="black"
-          x="5%"
-          y="50%"
+        <div
+          axis={1}
+          label={20}
+          xPos={5}
+          yPos={50}
         >
-          20
-        </text>
+          MockAxisTickLabel 
+        </div>
       </g>
       <g>
         <line
@@ -78,14 +78,14 @@ exports[`YAxis it renders consistently 1`] = `
           y1="10%"
           y2="10%"
         />
-        <text
-          className="YAxis__TickLabels"
-          stroke="black"
-          x="5%"
-          y="10%"
+        <div
+          axis={1}
+          label={30}
+          xPos={5}
+          yPos={10}
         >
-          30
-        </text>
+          MockAxisTickLabel 
+        </div>
       </g>
       <g>
         <line
@@ -95,14 +95,14 @@ exports[`YAxis it renders consistently 1`] = `
           y1="-30%"
           y2="-30%"
         />
-        <text
-          className="YAxis__TickLabels"
-          stroke="black"
-          x="5%"
-          y="-30%"
+        <div
+          axis={1}
+          label={40}
+          xPos={5}
+          yPos={-30}
         >
-          40
-        </text>
+          MockAxisTickLabel 
+        </div>
       </g>
     </g>
   </svg>
@@ -136,14 +136,14 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
           y1="130%"
           y2="130%"
         />
-        <text
-          className="YAxis__TickLabels"
-          stroke="black"
-          x="NaN%"
-          y="130%"
+        <div
+          axis={1}
+          label={0}
+          xPos={NaN}
+          yPos={130}
         >
-          0
-        </text>
+          MockAxisTickLabel 
+        </div>
       </g>
       <g>
         <line
@@ -153,14 +153,14 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
           y1="90%"
           y2="90%"
         />
-        <text
-          className="YAxis__TickLabels"
-          stroke="black"
-          x="NaN%"
-          y="90%"
+        <div
+          axis={1}
+          label={10}
+          xPos={NaN}
+          yPos={90}
         >
-          10
-        </text>
+          MockAxisTickLabel 
+        </div>
       </g>
       <g>
         <line
@@ -170,14 +170,14 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
           y1="50%"
           y2="50%"
         />
-        <text
-          className="YAxis__TickLabels"
-          stroke="black"
-          x="NaN%"
-          y="50%"
+        <div
+          axis={1}
+          label={20}
+          xPos={NaN}
+          yPos={50}
         >
-          20
-        </text>
+          MockAxisTickLabel 
+        </div>
       </g>
       <g>
         <line
@@ -187,14 +187,14 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
           y1="10%"
           y2="10%"
         />
-        <text
-          className="YAxis__TickLabels"
-          stroke="black"
-          x="NaN%"
-          y="10%"
+        <div
+          axis={1}
+          label={30}
+          xPos={NaN}
+          yPos={10}
         >
-          30
-        </text>
+          MockAxisTickLabel 
+        </div>
       </g>
       <g>
         <line
@@ -204,14 +204,14 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
           y1="-30%"
           y2="-30%"
         />
-        <text
-          className="YAxis__TickLabels"
-          stroke="black"
-          x="NaN%"
-          y="-30%"
+        <div
+          axis={1}
+          label={40}
+          xPos={NaN}
+          yPos={-30}
         >
-          40
-        </text>
+          MockAxisTickLabel 
+        </div>
       </g>
     </g>
   </svg>
