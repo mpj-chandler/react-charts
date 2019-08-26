@@ -5,7 +5,7 @@ import { AxisProps, AxisRange, SeriesDataPoint } from '../BarChart/types';
 import { getXAxisRange } from '../../utils/axisUtils/getXAxisRange/getXAxisRange';
 import { getYAxisRange } from '../../utils/axisUtils/getYAxisRange/getYAxisRange';
 import Placement from '../../enums/Placement';
-import AxisTickLabel from '../AxisTickLabel/AxisTickLabel';
+import AutoSizeTextBox from '../AxisTickLabel/AutoSizeTextBox';
 
 function getTickXPosition(props: XAxisTickProps, label: number) {
     const range = getXAxisRange(props.data, props.config);
@@ -56,7 +56,7 @@ function renderTick(
                 y2={`${y2}%`}
                 stroke={'black'}
             />
-            <AxisTickLabel
+            <AutoSizeTextBox
                 key={`tickText-${label}`}
                 xPos={textXPos}
                 yPos={y2}

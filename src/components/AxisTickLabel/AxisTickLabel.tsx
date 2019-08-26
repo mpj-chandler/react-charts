@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { forwardRef, MutableRefObject } from 'react';
 import styles from './AxisTickLabel.scss';
 
-interface AxisTickLabelProps {
+export interface AxisTickLabelProps {
     label: number;
     xPos: number;
     yPos: number;
+    ref: MutableRefObject<any>;
 }
 
-const AxisTickLabel: React.FC<AxisTickLabelProps> = (props) => {
+const AxisTickLabel: React.FC<AxisTickLabelProps> = (props: AxisTickLabelProps) => {
     return (
         <text
                 key={`tickText-${props.label}`}
