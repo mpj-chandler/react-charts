@@ -17,9 +17,23 @@ const BarChart: React.FC<BarChartProps> = (props: BarChartProps) => {
     return (
         <div className={styles.BarChart}>
             <div className={styles.BarChart__title}>{props.title}</div>
-            <YAxis title={'YAxis'} data={props.data} config={props.yAxisConfig} padding={props.padding}/>
-            <BarPlot data={props.data} padding={props.padding} xAxisConfig={props.xAxisConfig} yAxisConfig={props.yAxisConfig}/>
-            <XAxis title={'XAxis'} data={props.data} config={props.xAxisConfig} padding={props.padding}/>
+            <YAxis
+                title={'YAxis'}
+                data={props.data}
+                config={props.yAxisConfig}
+                padding={props.padding}/>
+            <BarPlot
+                data={props.data}
+                padding={props.padding}
+                xAxisConfig={props.xAxisConfig}
+                yAxisConfig={props.yAxisConfig}
+            />
+            <XAxis
+                title={'XAxis'}
+                data={props.data}
+                config={props.xAxisConfig}
+                padding={props.padding}
+            />
         </div>
     )
 }

@@ -16,33 +16,33 @@ const App: React.FC<AppProps> = (props) => {
                 points: [
                     {
                         x: 0,
-                        y: 10
+                        y: 10,
                     },
                     {
                         x: 1,
-                        y: 20
+                        y: 20,
                     },
                     {
                         x: 2,
-                        y: 30
-                    }
-                ]
-            }
+                        y: 30,
+                    },
+                ],
+            },
         ],
         padding: { left: 10, right: 10, top: 10, bottom: 10 },
         xAxisConfig: {
             zeroIntercept: true,
             margin: 10,
             tickPlacement: Placement.Bucket,
-            tickLength: 5
+            tickLength: 2,
         },
         yAxisConfig: {
             zeroIntercept: true,
             margin: 10,
             tickPlacement: Placement.Aligned,
-            tickLength: 5
-        }
-    }
+            tickLength: 2,
+        },
+    };
 
     const secondBarChartProps: BarChartProps = {
         title: 'My second bar chart',
@@ -52,33 +52,33 @@ const App: React.FC<AppProps> = (props) => {
                 points: [
                     {
                         x: 0,
-                        y: -10
+                        y: -10,
                     },
                     {
                         x: 1,
-                        y: 20
+                        y: 20,
                     },
                     {
                         x: 2,
-                        y: 30
-                    }
-                ]
-            }
+                        y: 30,
+                    },
+                ],
+            },
         ],
         padding: { left: 10, right: 10, top: 10, bottom: 10 },
         xAxisConfig: {
             zeroIntercept: true,
             margin: 10,
             tickPlacement: Placement.Bucket,
-            tickLength: 5
+            tickLength: 2,
         },
         yAxisConfig: {
             zeroIntercept: true,
             margin: 10,
             tickPlacement: Placement.Aligned,
-            tickLength: 5
-        }
-    }
+            tickLength: 2,
+        },
+    };
 
     const thirdBarChartProps: BarChartProps = {
         title: 'My third bar chart',
@@ -88,33 +88,33 @@ const App: React.FC<AppProps> = (props) => {
                 points: [
                     {
                         x: 0,
-                        y: -10
+                        y: -10,
                     },
                     {
                         x: 1,
-                        y: -20
+                        y: -20,
                     },
                     {
                         x: 2,
-                        y: -30
-                    }
-                ]
-            }
+                        y: -30,
+                    },
+                ],
+            },
         ],
         padding: { left: 10, right: 10, top: 10, bottom: 10 },
         xAxisConfig: {
             zeroIntercept: true,
             margin: 10,
             tickPlacement: Placement.Bucket,
-            tickLength: 5
+            tickLength: 2,
         },
         yAxisConfig: {
             zeroIntercept: true,
             margin: 10,
             tickPlacement: Placement.Aligned,
-            tickLength: 5
-        }
-    }
+            tickLength: 2,
+        },
+    };
 
     return (
         <div className={styles.App} {...props}>

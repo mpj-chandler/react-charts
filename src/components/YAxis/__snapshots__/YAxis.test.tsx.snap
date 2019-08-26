@@ -24,6 +24,23 @@ exports[`YAxis it renders consistently 1`] = `
           stroke="black"
           x1="5%"
           x2="10%"
+          y1="130%"
+          y2="130%"
+        />
+        <text
+          className="YAxis__TickLabels"
+          stroke="black"
+          x="5%"
+          y="130%"
+        >
+          0
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="5%"
+          x2="10%"
           y1="90%"
           y2="90%"
         />
@@ -68,6 +85,23 @@ exports[`YAxis it renders consistently 1`] = `
           y="10%"
         >
           30
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="5%"
+          x2="10%"
+          y1="-30%"
+          y2="-30%"
+        />
+        <text
+          className="YAxis__TickLabels"
+          stroke="black"
+          x="5%"
+          y="-30%"
+        >
+          40
         </text>
       </g>
     </g>
@@ -99,6 +133,23 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
           stroke="black"
           x1="NaN%"
           x2="10%"
+          y1="130%"
+          y2="130%"
+        />
+        <text
+          className="YAxis__TickLabels"
+          stroke="black"
+          x="NaN%"
+          y="130%"
+        >
+          0
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="NaN%"
+          x2="10%"
           y1="90%"
           y2="90%"
         />
@@ -143,6 +194,23 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
           y="10%"
         >
           30
+        </text>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="NaN%"
+          x2="10%"
+          y1="-30%"
+          y2="-30%"
+        />
+        <text
+          className="YAxis__TickLabels"
+          stroke="black"
+          x="NaN%"
+          y="-30%"
+        >
+          40
         </text>
       </g>
     </g>

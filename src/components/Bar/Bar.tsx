@@ -1,11 +1,10 @@
 import React from 'react';
-import { AxisRange, Padding, SeriesDataPoint } from '../BarChart/types';
-import { useAnimation } from '../../utils/useAnimation';
+import { AxisRange, Padding, SeriesDataPoint, NonNullSeriesDataPoint } from '../BarChart/types';
+import { useAnimation } from '../../utils/hooks/useAnimation/useAnimation';
 import Placement from '../../enums/Placement';
-import { getXAxisRange } from '../../utils/getXAxisRange';
 
 export interface BarProps {
-    point: SeriesDataPoint;
+    point: NonNullSeriesDataPoint;
     yRange: AxisRange;
     xRange: AxisRange;
     width: number;
@@ -31,7 +30,7 @@ function getZeroPoint(props: BarProps): number {
     return (props.yRange.max / (props.yRange.max - props.yRange.min));
 }
 
-function getBarXPosition(props: BarProps) {
+function getBarXPosition(props: BarProps): number {
     const interval = props.xRange.max - props.xRange.min;
     const totalHorizontalPadding = props.padding.right + props.padding.left;
 
@@ -40,6 +39,7 @@ function getBarXPosition(props: BarProps) {
 
         return ((100 - totalHorizontalPadding) * ((step + props.point.x) / interval)) + props.padding.left;
     }
+
     return ((100 - totalHorizontalPadding) * (props.point.x / interval)) + props.padding.left;
 }
 
@@ -53,6 +53,7 @@ function getY(height: number, yStart: number, value: number) {
 }
 
 const Bar: React.FC<BarProps> = (props: BarProps) => {
+
     const x = getBarXPosition(props);
     const height = getBarEndingHeight(props);
     const zeroPoint = getZeroPoint(props);
@@ -75,7 +76,7 @@ const Bar: React.FC<BarProps> = (props: BarProps) => {
             stroke={props.stroke}
         >
         </rect>
-    )
+    );
 }
 
 export default Bar;

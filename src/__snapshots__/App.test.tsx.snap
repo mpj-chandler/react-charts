@@ -46,7 +46,7 @@ exports[`App it renders consistently 1`] = `
       xAxisConfig={
         Object {
           "margin": 10,
-          "tickLength": 5,
+          "tickLength": 2,
           "tickPlacement": 1,
           "zeroIntercept": true,
         }
@@ -54,7 +54,7 @@ exports[`App it renders consistently 1`] = `
       yAxisConfig={
         Object {
           "margin": 10,
-          "tickLength": 5,
+          "tickLength": 2,
           "tickPlacement": 0,
           "zeroIntercept": true,
         }
@@ -100,7 +100,7 @@ exports[`App it renders consistently 1`] = `
       xAxisConfig={
         Object {
           "margin": 10,
-          "tickLength": 5,
+          "tickLength": 2,
           "tickPlacement": 1,
           "zeroIntercept": true,
         }
@@ -108,7 +108,7 @@ exports[`App it renders consistently 1`] = `
       yAxisConfig={
         Object {
           "margin": 10,
-          "tickLength": 5,
+          "tickLength": 2,
           "tickPlacement": 0,
           "zeroIntercept": true,
         }
@@ -154,7 +154,7 @@ exports[`App it renders consistently 1`] = `
       xAxisConfig={
         Object {
           "margin": 10,
-          "tickLength": 5,
+          "tickLength": 2,
           "tickPlacement": 1,
           "zeroIntercept": true,
         }
@@ -162,7 +162,7 @@ exports[`App it renders consistently 1`] = `
       yAxisConfig={
         Object {
           "margin": 10,
-          "tickLength": 5,
+          "tickLength": 2,
           "tickPlacement": 0,
           "zeroIntercept": true,
         }

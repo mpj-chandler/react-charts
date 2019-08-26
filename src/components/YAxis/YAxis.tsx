@@ -2,8 +2,10 @@ import React from 'react';
 import { AxisRange, YAxisTickProps } from './types';
 import styles from './YAxis.scss';
 import { AxisProps, SeriesDataPoint } from '../BarChart/types';
-import { getYAxisRange } from '../../utils/getYAxisRange';
-import { getXAxisRange } from '../../utils/getXAxisRange';
+import { getYAxisRange } from '../../utils/axisUtils/getYAxisRange/getYAxisRange';
+import { getXAxisRange } from '../../utils/axisUtils/getXAxisRange/getXAxisRange';
+import generateAxisLabels from '../../utils/axisUtils/generateAxisLabels/generateAxisLabels';
+import Axis from '../../enums/Axis';
 
 function getYAxisXPos(props: AxisProps): number {
     const range = getXAxisRange(props.data, props.config);
@@ -12,17 +14,16 @@ function getYAxisXPos(props: AxisProps): number {
 }
 
 function renderTicks(props: YAxisTickProps, x2: number): JSX.Element {
-    const tickLabels: number[] = props.data[0].points.map((point: SeriesDataPoint) => point.y)
+    const tickLabels: string[] = generateAxisLabels(props.data, Axis.YAxis);
     const range: AxisRange = getYAxisRange(props.data, props.config);
     const interval = range.max - range.min;
     const tickLength = props.config ? props.config.tickLength : 5;
 
-
     return (
         <g className={styles.YAxis__Ticks}>
-            {tickLabels.map((label: number) => {
+            {tickLabels.map((label: string) => {
                 const y1 = (((100 - (props.padding.top + props.padding.bottom))
-                 * (1 - (label - range.min) / interval)))
+                 * (1 - (Number(label) - range.min) / interval)))
                  + props.padding.top;
 
                 return (
