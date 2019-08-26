@@ -2,9 +2,9 @@ import React from 'react';
 import { AxisRange, YAxisTickProps } from './types';
 import styles from './YAxis.scss';
 import { AxisProps, SeriesDataPoint } from '../BarChart/types';
-import { getYAxisRange } from '../../utils/getYAxisRange';
-import { getXAxisRange } from '../../utils/getXAxisRange';
-import generateAxisLabels from '../../utils/generateAxisLabels';
+import { getYAxisRange } from '../../utils/axisUtils/getYAxisRange/getYAxisRange';
+import { getXAxisRange } from '../../utils/axisUtils/getXAxisRange/getXAxisRange';
+import generateAxisLabels from '../../utils/axisUtils/generateAxisLabels/generateAxisLabels';
 import Axis from '../../enums/Axis';
 
 function getYAxisXPos(props: AxisProps): number {

@@ -30,6 +30,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="10%"
           y="7.5%"
         >
@@ -47,6 +48,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="50%"
           y="7.5%"
         >
@@ -64,6 +66,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="90%"
           y="7.5%"
         >
@@ -105,6 +108,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="23.333333333333332%"
           y="7.5%"
         >
@@ -122,6 +126,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="53.33333333333334%"
           y="7.5%"
         >
@@ -139,6 +144,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="83.33333333333334%"
           y="7.5%"
         >
@@ -180,6 +186,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="10%"
           y="7.5%"
         >
@@ -197,6 +204,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="50%"
           y="7.5%"
         >
@@ -214,6 +222,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="90%"
           y="7.5%"
         >
@@ -255,6 +264,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="10%"
           y="135%"
         >
@@ -272,6 +282,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="50%"
           y="135%"
         >
@@ -289,6 +300,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="90%"
           y="135%"
         >
@@ -330,6 +342,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="23.33333333333334%"
           y="135%"
         >
@@ -347,6 +360,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="53.33333333333334%"
           y="135%"
         >
@@ -364,6 +378,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="83.33333333333334%"
           y="135%"
         >
@@ -405,6 +420,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="10%"
           y="135%"
         >
@@ -422,6 +438,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="50%"
           y="135%"
         >
@@ -439,6 +456,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="90%"
           y="135%"
         >
@@ -480,6 +498,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="10%"
           y="135%"
         >
@@ -497,6 +516,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="50%"
           y="135%"
         >
@@ -514,6 +534,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="90%"
           y="135%"
         >
@@ -555,6 +576,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="23.333333333333332%"
           y="135%"
         >
@@ -572,6 +594,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="53.33333333333334%"
           y="135%"
         >
@@ -589,6 +612,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="83.33333333333334%"
           y="135%"
         >
@@ -630,6 +654,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="10%"
           y="135%"
         >
@@ -647,6 +672,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="50%"
           y="135%"
         >
@@ -664,6 +690,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="90%"
           y="135%"
         >
@@ -705,6 +732,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="10%"
           y="135%"
         >
@@ -722,6 +750,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="30%"
           y="135%"
         >
@@ -739,6 +768,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="90%"
           y="135%"
         >
@@ -780,6 +810,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="23.333333333333332%"
           y="135%"
         >
@@ -797,6 +828,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="38.333333333333336%"
           y="135%"
         >
@@ -814,6 +846,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="83.33333333333334%"
           y="135%"
         >
@@ -855,6 +888,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="10%"
           y="135%"
         >
@@ -872,6 +906,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="30%"
           y="135%"
         >
@@ -889,6 +924,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         <text
           className="XAxis__TickLabels"
           stroke="black"
+          textLength="1vw"
           x="90%"
           y="135%"
         >

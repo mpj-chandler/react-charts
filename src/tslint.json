@@ -17,6 +17,7 @@
         "object-literal-sort-keys": false,
         "quotemark": [true, "single", "jsx-double"],
         "ordered-imports": false,
+        "no-unused-variable": true,
         "newline-before-return": true
     },
     "jsRules": {
