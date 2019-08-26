@@ -6,6 +6,7 @@ import { getYAxisRange } from '../../utils/axisUtils/getYAxisRange/getYAxisRange
 import { getXAxisRange } from '../../utils/axisUtils/getXAxisRange/getXAxisRange';
 import generateAxisLabels from '../../utils/axisUtils/generateAxisLabels/generateAxisLabels';
 import Axis from '../../enums/Axis';
+import AxisTickLabel from '../AxisTickLabel/AxisTickLabel';
 
 function getYAxisXPos(props: AxisProps): number {
     const range = getXAxisRange(props.data, props.config);
@@ -35,7 +36,13 @@ function renderTicks(props: YAxisTickProps, x2: number): JSX.Element {
                             y2={`${y1}%`}
                             stroke={'black'}
                         />
-                        <text className={styles.YAxis__TickLabels} x={`${x2 - tickLength}%`} y={`${y1}%`} stroke={'black'}>{label}</text>
+                        <AxisTickLabel
+                            key={`tickText-${label}`}
+                            xPos={x2 - tickLength}
+                            yPos={y1}
+                            label={Number(label)}
+                            axis={Axis.YAxis}
+                        />
                     </g>
                 );
             })}

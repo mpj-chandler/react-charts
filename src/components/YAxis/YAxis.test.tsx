@@ -5,6 +5,8 @@ import { AxisProps, AxisConfig } from '../BarChart/types';
 import Placement from '../../enums/Placement';
 
 
+jest.mock('../AxisTickLabel/AxisTickLabel');
+
 describe('YAxis', () => {
     const props: AxisProps = {
         title: 'anything',
@@ -31,7 +33,7 @@ describe('YAxis', () => {
             top: 10,
             bottom: 10,
             left: 10,
-            right: 10
+            right: 10,
         }
     };
 
@@ -39,7 +41,7 @@ describe('YAxis', () => {
         zeroIntercept: true,
         margin: 20,
         tickPlacement: Placement.Aligned,
-        tickLength: 10
+        tickLength: 10,
     }
 
     it('it renders consistently', () => {
