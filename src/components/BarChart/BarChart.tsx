@@ -2,8 +2,11 @@ import React from 'react';
 import styles from './BarChart.scss';
 import XAxis from '../XAxis/XAxis';
 import YAxis from '../YAxis/YAxis';
-import { SeriesData, Padding, AxisConfig } from './types';
+
 import BarPlot from '../BarPlot/BarPlot';
+import { SeriesData } from '../../__types__/seriesTypes';
+import { Padding } from '../../__types__/stylingTypes';
+import { AxisConfig } from '../../__types__/axisTypes';
 
 export interface BarChartProps {
     data: SeriesData[];

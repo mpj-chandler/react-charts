@@ -1,12 +1,11 @@
 import React from 'react';
-import { AxisRange, YAxisTickProps } from './types';
 import styles from './YAxis.scss';
-import { AxisProps, SeriesDataPoint } from '../BarChart/types';
 import { getYAxisRange } from '../../utils/axisUtils/getYAxisRange/getYAxisRange';
 import { getXAxisRange } from '../../utils/axisUtils/getXAxisRange/getXAxisRange';
 import generateAxisLabels from '../../utils/axisUtils/generateAxisLabels/generateAxisLabels';
 import Axis from '../../enums/Axis';
 import AxisTickLabel from '../AxisTickLabel/AxisTickLabel';
+import { AxisProps, AxisTickProps, AxisRange } from '../../__types__/axisTypes';
 
 function getYAxisXPos(props: AxisProps): number {
     const range = getXAxisRange(props.data, props.config);
@@ -14,7 +13,7 @@ function getYAxisXPos(props: AxisProps): number {
     return (100 * (range.min / (range.max - range.min)) + props.padding.left);
 }
 
-function renderTicks(props: YAxisTickProps, x2: number): JSX.Element {
+function renderTicks(props: AxisTickProps, x2: number): JSX.Element {
     const tickLabels: string[] = generateAxisLabels(props.data, Axis.YAxis);
     const range: AxisRange = getYAxisRange(props.data, props.config);
     const interval = range.max - range.min;
