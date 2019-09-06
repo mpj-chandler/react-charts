@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './App.scss';
 import BarChart, { BarChartProps } from './components/BarChart/BarChart';
 import Placement from './enums/Placement';
+import DataType from './enums/DataType';
 
 interface AppProps {
 
@@ -13,6 +14,10 @@ const App: React.FC<AppProps> = (props) => {
         data: [
             {
                 seriesName: 'A',
+                type: {
+                    x: DataType.NonNullNumeric,
+                    y: DataType.NonNullNumeric,
+                },
                 points: [
                     {
                         x: 0,
@@ -49,6 +54,10 @@ const App: React.FC<AppProps> = (props) => {
         data: [
             {
                 seriesName: 'A',
+                type: {
+                    x: DataType.NonNullNumeric,
+                    y: DataType.NonNullNumeric,
+                },
                 points: [
                     {
                         x: 0,
@@ -85,6 +94,50 @@ const App: React.FC<AppProps> = (props) => {
         data: [
             {
                 seriesName: 'A',
+                type: {
+                    x: DataType.NonNullNumeric,
+                    y: DataType.NonNullNumeric,
+                },
+                points: [
+                    {
+                        x: 0,
+                        y: -10,
+                    },
+                    {
+                        x: 1,
+                        y: -20,
+                    },
+                    {
+                        x: 2,
+                        y: -30,
+                    },
+                ],
+            },
+        ],
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        xAxisConfig: {
+            zeroIntercept: true,
+            margin: 10,
+            tickPlacement: Placement.Bucket,
+            tickLength: 2,
+        },
+        yAxisConfig: {
+            zeroIntercept: true,
+            margin: 10,
+            tickPlacement: Placement.Aligned,
+            tickLength: 2,
+        },
+    };
+
+    const fourthBarChartProps: BarChartProps = {
+        title: 'My fourth bar chart',
+        data: [
+            {
+                seriesName: 'A',
+                type: {
+                    x: DataType.Named,
+                    y: DataType.NonNullNumeric,
+                },
                 points: [
                     {
                         x: 0,
@@ -127,6 +180,9 @@ const App: React.FC<AppProps> = (props) => {
             </div>
             <div className={styles.App__ThirdChartContainer}>
                 <BarChart {...thirdBarChartProps}/>
+            </div>
+            <div className={styles.App__FourthChartContainer}>
+                <BarChart {...fourthBarChartProps}/>
             </div>
         </div>
     );
