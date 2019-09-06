@@ -44,7 +44,6 @@ interface XAxisTickProps extends AxisTickProps {
 
 const XAxisTicks: React.FC<XAxisTickProps> = (props) => {
 
-    const points: DataPoint[] = props.data[0].points;
     const tickLabels: string[] = generateAxisLabels(props.data, Axis.XAxis);
 
     return (<g className={styles.XAxisTicks}>

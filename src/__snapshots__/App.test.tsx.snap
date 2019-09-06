@@ -31,6 +31,10 @@ exports[`App it renders consistently 1`] = `
               },
             ],
             "seriesName": "A",
+            "type": Object {
+              "x": "NON_NULL_NUMERIC",
+              "y": "NON_NULL_NUMERIC",
+            },
           },
         ]
       }
@@ -85,6 +89,10 @@ exports[`App it renders consistently 1`] = `
               },
             ],
             "seriesName": "A",
+            "type": Object {
+              "x": "NON_NULL_NUMERIC",
+              "y": "NON_NULL_NUMERIC",
+            },
           },
         ]
       }
@@ -139,6 +147,10 @@ exports[`App it renders consistently 1`] = `
               },
             ],
             "seriesName": "A",
+            "type": Object {
+              "x": "NON_NULL_NUMERIC",
+              "y": "NON_NULL_NUMERIC",
+            },
           },
         ]
       }
@@ -151,6 +163,64 @@ exports[`App it renders consistently 1`] = `
         }
       }
       title="My third bar chart"
+      xAxisConfig={
+        Object {
+          "margin": 10,
+          "tickLength": 2,
+          "tickPlacement": 1,
+          "zeroIntercept": true,
+        }
+      }
+      yAxisConfig={
+        Object {
+          "margin": 10,
+          "tickLength": 2,
+          "tickPlacement": 0,
+          "zeroIntercept": true,
+        }
+      }
+    >
+      Mock BarChart 
+    </div>
+  </div>
+  <div
+    className="App__FourthChartContainer"
+  >
+    <div
+      data={
+        Array [
+          Object {
+            "points": Array [
+              Object {
+                "x": 0,
+                "y": -10,
+              },
+              Object {
+                "x": 1,
+                "y": -20,
+              },
+              Object {
+                "x": 2,
+                "y": -30,
+              },
+            ],
+            "seriesName": "A",
+            "type": Object {
+              "x": "NON_NULL_NUMERIC",
+              "y": "NON_NULL_NUMERIC",
+            },
+          },
+        ]
+      }
+      padding={
+        Object {
+          "bottom": 10,
+          "left": 10,
+          "right": 10,
+          "top": 10,
+        }
+      }
+      title="My fourth bar chart"
       xAxisConfig={
         Object {
           "margin": 10,

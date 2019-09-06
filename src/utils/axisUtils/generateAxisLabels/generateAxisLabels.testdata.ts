@@ -1,8 +1,13 @@
-import { SeriesData } from '../../../components/BarChart/types';
+import { SeriesData } from '../../../__types__/seriesTypes';
+import DataType from '../../../enums/DataType';
 
 export const dataOne: SeriesData[] = [
     {
         seriesName: 'test-series-1',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: 0,
@@ -16,6 +21,10 @@ export const dataOne: SeriesData[] = [
     },
     {
         seriesName: 'test-series-2',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: 0,
@@ -29,6 +38,10 @@ export const dataOne: SeriesData[] = [
     },
     {
         seriesName: 'test-series-2',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: 0,
@@ -45,6 +58,10 @@ export const dataOne: SeriesData[] = [
 export const dataTwo: SeriesData[] = [
     {
         seriesName: 'test-series-1',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: -1,
@@ -58,6 +75,10 @@ export const dataTwo: SeriesData[] = [
     },
     {
         seriesName: 'test-series-2',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: 0,
@@ -71,6 +92,10 @@ export const dataTwo: SeriesData[] = [
     },
     {
         seriesName: 'test-series-2',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: 0,
@@ -86,6 +111,10 @@ export const dataTwo: SeriesData[] = [
 
 const nullEntry: SeriesData = {
     seriesName: 'test-series-3',
+    type: {
+        x: DataType.NonNullNumeric,
+        y: DataType.NonNullNumeric,
+    },
     points: [
         {
             x: null,
@@ -111,6 +140,10 @@ export const partiallyNullData: SeriesData[] = [ ...dataOne, nullEntry ];
 export const malformedData: SeriesData[] = [
     {
         seriesName: 'test-series-1',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: null,
