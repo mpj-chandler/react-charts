@@ -1,12 +1,15 @@
 import React from 'react';
-import { XAxisTickProps } from './types';
 import styles from './XAxis.scss';
-import { AxisProps, AxisRange, SeriesDataPoint } from '../BarChart/types';
 import { getXAxisRange } from '../../utils/axisUtils/getXAxisRange/getXAxisRange';
 import { getYAxisRange } from '../../utils/axisUtils/getYAxisRange/getYAxisRange';
 import Placement from '../../enums/Placement';
+import AxisTickLabel from '../AxisTickLabel/AxisTickLabel';
+import Axis from '../../enums/Axis';
+import generateAxisLabels from '../../utils/axisUtils/generateAxisLabels/generateAxisLabels';
+import { AxisTickProps, AxisProps } from '../../__types__/axisTypes';
+import { SeriesDataPoint } from '../../__types__/seriesTypes';
 
-function getTickXPosition(props: XAxisTickProps, label: number) {
+function getTickXPosition(props: AxisTickProps, label: number) {
     const range = getXAxisRange(props.data, props.config);
     const numPoints = props.data[0].points.length;
     const interval = range.max - range.min;
@@ -21,7 +24,7 @@ function getTickXPosition(props: XAxisTickProps, label: number) {
     return ((100 - totalHorizontalPadding) * (label - range.min) / interval) + props.padding.left;
 }
 
-function getTickTextXPosition(x1: number, props: XAxisTickProps, label: number) {
+function getTickTextXPosition(x1: number, props: AxisTickProps, label: number) {
     const range = getXAxisRange(props.data, props.config);
     const numPoints = props.data[0].points.length;
     const interval = range.max - range.min;
@@ -40,7 +43,7 @@ function renderTick(
     label: number,
     x1: number,
     y1: number,
-    props: XAxisTickProps,
+    props: AxisTickProps,
     textXPos: number,
     tickLength: number = 5) {
     const y2 = y1 === props.padding.top ? y1 - tickLength / 2 : y1 + tickLength;
@@ -55,37 +58,28 @@ function renderTick(
                 y2={`${y2}%`}
                 stroke={'black'}
             />
-            <text
+            <AxisTickLabel
                 key={`tickText-${label}`}
-                className={styles.XAxis__TickLabels}
-                x={`${textXPos}%`}
-                y={`${y2}%`}
-                stroke={'black'}
-                textLength={'1vw'}
-            >
-                {label}
-            </text>
+                xPos={textXPos}
+                yPos={y2}
+                label={label}
+                axis={Axis.XAxis}
+            />
         </g>
     );
 }
 
-function generateTickLabels(points: SeriesDataPoint[]) {
-    return points.map((point: SeriesDataPoint) => point.x);
-}
-
-function renderTicks(props: XAxisTickProps, y1: number) {
+function renderTicks(props: AxisTickProps, y1: number) {
     const points: SeriesDataPoint[] = props.data[0].points;
-    const tickLabels: Array<number | null> = generateTickLabels(points);
+    const tickLabels: string[] = generateAxisLabels(props.data, Axis.XAxis);
 
     return (
         <g className={styles.XAxis__Ticks}>
-            {tickLabels.map((label: number | null) => {
-                if (label !== null) {
-                    const x1 = getTickXPosition(props, label);
-                    const textXPos = getTickTextXPosition(x1, props, label);
+            {tickLabels.map((label: string) => {
+                const x1 = getTickXPosition(props, Number(label));
+                const textXPos = getTickTextXPosition(x1, props, Number(label));
 
-                    return renderTick(label, x1, y1, props, textXPos);
-                }
+                return renderTick(Number(label), x1, y1, props, textXPos);
             })}
         </g>
     );

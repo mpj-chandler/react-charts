@@ -1,9 +1,9 @@
-import { SeriesData } from '../../../components/BarChart/types';
-import { AxisRange } from '../../../components/YAxis/types';
 import Axis from '../../../enums/Axis';
 import calculateTickInterval from '../calculateTickInterval/calculateTickInterval';
 import { getXAxisRange } from '../getXAxisRange/getXAxisRange';
 import { getYAxisRange } from '../getYAxisRange/getYAxisRange';
+import { SeriesData } from '../../../__types__/seriesTypes';
+import { AxisRange } from '../../../__types__/axisTypes';
 
 function generateAxisLabels(seriesData: SeriesData[], axis: Axis): string[] {
     const labels: string[] = [];
