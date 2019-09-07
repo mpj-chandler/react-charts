@@ -7,9 +7,10 @@ import { DataPoint } from '../../__types__/seriesTypes';
 import { getTickTextXPosition } from '../XAxis/utils/getTickTextXPosition';
 import { getTickXPosition } from '../XAxis/utils/getTickXPosition';
 import AxisTickLabel from '../AxisTickLabel/AxisTickLabel';
+import DataType from '../../enums/DataType';
 
 export function renderTick(
-    label: number,
+    label: string,
     x1: number,
     y1: number,
     props: AxisTickProps,
@@ -44,14 +45,15 @@ interface XAxisTickProps extends AxisTickProps {
 
 const XAxisTicks: React.FC<XAxisTickProps> = (props) => {
 
-    const tickLabels: string[] = generateAxisLabels(props.data, Axis.XAxis);
+    const tickLabels: { dataType: DataType, labels: Array<{index: number, label: string }> }
+        = generateAxisLabels(props.data, Axis.XAxis);
 
     return (<g className={styles.XAxisTicks}>
-        {tickLabels.map((label: string) => {
-            const x1 = getTickXPosition(props, Number(label));
-            const textXPos = getTickTextXPosition(x1, props, Number(label));
+        {tickLabels.labels.map((item: { index: number, label: string }) => {
+            const x1 = getTickXPosition(props, tickLabels.dataType, item);
+            const textXPos = getTickTextXPosition(x1, props, tickLabels.dataType, item);
 
-            return renderTick(Number(label), x1, props.y1, props, textXPos);
+            return renderTick(item.label, x1, props.y1, props, textXPos);
         })}
     </g>);
 };

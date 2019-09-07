@@ -29,7 +29,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={-30}
           yPos={7.5}
         >
@@ -46,7 +46,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={10}
           yPos={7.5}
         >
@@ -63,7 +63,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={50}
           yPos={7.5}
         >
@@ -80,7 +80,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={90}
           yPos={7.5}
         >
@@ -97,7 +97,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={4}
+          label="4"
           xPos={130}
           yPos={7.5}
         >
@@ -138,7 +138,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={-6.666666666666668}
           yPos={7.5}
         >
@@ -155,7 +155,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={23.333333333333332}
           yPos={7.5}
         >
@@ -172,7 +172,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={53.33333333333334}
           yPos={7.5}
         >
@@ -189,7 +189,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={83.33333333333334}
           yPos={7.5}
         >
@@ -206,7 +206,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={4}
+          label="4"
           xPos={113.33333333333334}
           yPos={7.5}
         >
@@ -247,7 +247,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={-30}
           yPos={7.5}
         >
@@ -264,7 +264,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={10}
           yPos={7.5}
         >
@@ -281,7 +281,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={50}
           yPos={7.5}
         >
@@ -298,7 +298,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={90}
           yPos={7.5}
         >
@@ -315,7 +315,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={4}
+          label="4"
           xPos={130}
           yPos={7.5}
         >
@@ -356,7 +356,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         />
         <div
           axis={0}
-          label={-3}
+          label="-3"
           xPos={10}
           yPos={135}
         >
@@ -373,7 +373,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={50}
           yPos={135}
         >
@@ -390,7 +390,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={90}
           yPos={135}
         >
@@ -407,7 +407,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={130}
           yPos={135}
         >
@@ -448,7 +448,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-3}
+          label="-3"
           xPos={23.33333333333334}
           yPos={135}
         >
@@ -465,7 +465,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={53.33333333333334}
           yPos={135}
         >
@@ -482,7 +482,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={83.33333333333334}
           yPos={135}
         >
@@ -499,7 +499,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={113.33333333333334}
           yPos={135}
         >
@@ -540,7 +540,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-3}
+          label="-3"
           xPos={10}
           yPos={135}
         >
@@ -557,7 +557,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={50}
           yPos={135}
         >
@@ -574,7 +574,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={90}
           yPos={135}
         >
@@ -591,7 +591,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={130}
           yPos={135}
         >
@@ -632,7 +632,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={10}
           yPos={135}
         >
@@ -649,7 +649,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={50}
           yPos={135}
         >
@@ -666,7 +666,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={90}
           yPos={135}
         >
@@ -683,7 +683,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={130}
           yPos={135}
         >
@@ -724,7 +724,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={23.333333333333332}
           yPos={135}
         >
@@ -741,7 +741,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={53.33333333333334}
           yPos={135}
         >
@@ -758,7 +758,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={83.33333333333334}
           yPos={135}
         >
@@ -775,7 +775,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={113.33333333333334}
           yPos={135}
         >
@@ -816,7 +816,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={10}
           yPos={135}
         >
@@ -833,7 +833,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={50}
           yPos={135}
         >
@@ -850,7 +850,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={90}
           yPos={135}
         >
@@ -867,7 +867,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={130}
           yPos={135}
         >
@@ -908,7 +908,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={10}
           yPos={135}
         >
@@ -925,7 +925,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={30}
           yPos={135}
         >
@@ -942,7 +942,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={50}
           yPos={135}
         >
@@ -959,7 +959,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={70}
           yPos={135}
         >
@@ -976,7 +976,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={90}
           yPos={135}
         >
@@ -993,7 +993,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={110}
           yPos={135}
         >
@@ -1034,7 +1034,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={23.333333333333332}
           yPos={135}
         >
@@ -1051,7 +1051,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={38.333333333333336}
           yPos={135}
         >
@@ -1068,7 +1068,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={53.33333333333334}
           yPos={135}
         >
@@ -1085,7 +1085,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={68.33333333333334}
           yPos={135}
         >
@@ -1102,7 +1102,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={83.33333333333334}
           yPos={135}
         >
@@ -1119,7 +1119,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={98.33333333333334}
           yPos={135}
         >
@@ -1160,7 +1160,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={10}
           yPos={135}
         >
@@ -1177,7 +1177,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={30}
           yPos={135}
         >
@@ -1194,7 +1194,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={50}
           yPos={135}
         >
@@ -1211,7 +1211,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={70}
           yPos={135}
         >
@@ -1228,7 +1228,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={90}
           yPos={135}
         >
@@ -1245,7 +1245,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={110}
           yPos={135}
         >

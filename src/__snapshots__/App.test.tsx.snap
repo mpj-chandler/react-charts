@@ -192,21 +192,21 @@ exports[`App it renders consistently 1`] = `
           Object {
             "points": Array [
               Object {
-                "x": 0,
+                "x": "Anything",
                 "y": -10,
               },
               Object {
-                "x": 1,
-                "y": -20,
+                "x": "Belongs",
+                "y": 20,
               },
               Object {
-                "x": 2,
+                "x": "Conservatory",
                 "y": -30,
               },
             ],
             "seriesName": "A",
             "type": Object {
-              "x": "NON_NULL_NUMERIC",
+              "x": "NAMED",
               "y": "NON_NULL_NUMERIC",
             },
           },

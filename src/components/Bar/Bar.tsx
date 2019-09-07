@@ -1,10 +1,16 @@
 import React from 'react';
-import { AxisRange, Padding, SeriesDataPoint, NonNullSeriesDataPoint } from '../BarChart/types';
 import { useAnimation } from '../../utils/hooks/useAnimation/useAnimation';
 import Placement from '../../enums/Placement';
+import { NonNullNumericDataPoint, NamedDataPoint, DateIndexedDataPoint } from '../../__types__/seriesTypes';
+import { AxisRange } from '../../__types__/axisTypes';
+import { Padding } from '../../__types__/stylingTypes';
+import { getBarXPosition } from './utils/getBarXPosition';
+import DataType from '../../enums/DataType';
 
 export interface BarProps {
-    point: NonNullSeriesDataPoint;
+    point: NonNullNumericDataPoint | NamedDataPoint | DateIndexedDataPoint;
+    index: number;
+    type: DataType;
     yRange: AxisRange;
     xRange: AxisRange;
     width: number;
@@ -28,19 +34,6 @@ function getBarEndingHeight(props: BarProps): number {
 
 function getZeroPoint(props: BarProps): number {
     return (props.yRange.max / (props.yRange.max - props.yRange.min));
-}
-
-function getBarXPosition(props: BarProps): number {
-    const interval = props.xRange.max - props.xRange.min;
-    const totalHorizontalPadding = props.padding.right + props.padding.left;
-
-    if (props.barAlignment === Placement.Bucket) {
-        const step = 0.5 * interval / props.numBars;
-
-        return ((100 - totalHorizontalPadding) * ((step + props.point.x) / interval)) + props.padding.left;
-    }
-
-    return ((100 - totalHorizontalPadding) * (props.point.x / interval)) + props.padding.left;
 }
 
 function getY(height: number, yStart: number, value: number) {

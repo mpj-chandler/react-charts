@@ -3,7 +3,7 @@ import styles from './AxisTickLabel.scss';
 import Axis from '../../enums/Axis';
 
 export interface AxisTickLabelProps {
-    label: number;
+    label: string;
     xPos: number;
     yPos: number;
     axis: Axis;
@@ -35,7 +35,7 @@ const AxisTickLabel: React.FC<AxisTickLabelProps> = (props: AxisTickLabelProps) 
                 stroke={'black'}
                 style={{ transform: `translate(${xTransform}px, ${yTransform}px)`}}
         >
-            {props.label.toString()}
+            {props.label}
         </text>
     );
 };

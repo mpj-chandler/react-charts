@@ -140,15 +140,15 @@ const App: React.FC<AppProps> = (props) => {
                 },
                 points: [
                     {
-                        x: 'A',
+                        x: 'Anything',
                         y: -10,
                     },
                     {
-                        x: 'B',
-                        y: -20,
+                        x: 'Belongs',
+                        y: 20,
                     },
                     {
-                        x: 'C',
+                        x: 'Conservatory',
                         y: -30,
                     },
                 ],

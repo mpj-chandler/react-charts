@@ -1,8 +1,10 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 import BarPlot, { BarPlotProps } from './BarPlot';
-import { AxisConfig } from '../BarChart/types';
+
 import Placement from '../../enums/Placement';
+import DataType from '../../enums/DataType';
+import { AxisConfig } from '../../__types__/axisTypes';
 
 jest.mock('../Bar/Bar.tsx');
 
@@ -20,6 +22,10 @@ describe('BarPlot', () => {
         data: [
             {
                 seriesName: 'A',
+                type: {
+                    x: DataType.NonNullNumeric,
+                    y: DataType.NonNullNumeric,
+                },
                 points: [
                     {
                         x: 0,
@@ -107,6 +113,10 @@ describe('BarPlot', () => {
             data: [
                 {
                     seriesName: 'A',
+                    type: {
+                        x: DataType.NonNullNumeric,
+                        y: DataType.NonNullNumeric,
+                    },
                     points: [
                         {
                             x: null,

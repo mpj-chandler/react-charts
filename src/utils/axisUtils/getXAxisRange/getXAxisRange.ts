@@ -35,10 +35,19 @@ function extractNamedXAxisRange(seriesData: SeriesData[], config?: AxisConfig) {
         throw new Error('Error in XAxis calibration - unable to extract any data points!');
     }
 
-    return {
+    let range: AxisRange = {
         min: 0,
         max: Array.from(labels).length - 1,
     };
+
+    if (config) {
+        if (config.tickPlacement === Placement.Bucket) {
+            range = applyBucketPlacement(range, seriesData[0].points.length);
+        }
+        range = applyAxisConfig(range, config);
+    }
+
+    return range;
 }
 
 function extractNumericXAxisRange(seriesData: SeriesData[], config?: AxisConfig) {

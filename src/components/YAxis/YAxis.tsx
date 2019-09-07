@@ -6,6 +6,7 @@ import generateAxisLabels from '../../utils/axisUtils/generateAxisLabels/generat
 import Axis from '../../enums/Axis';
 import AxisTickLabel from '../AxisTickLabel/AxisTickLabel';
 import { AxisProps, AxisTickProps, AxisRange } from '../../__types__/axisTypes';
+import DataType from '../../enums/DataType';
 
 function getYAxisXPos(props: AxisProps): number {
     const range = getXAxisRange(props.data, props.config);
@@ -14,20 +15,24 @@ function getYAxisXPos(props: AxisProps): number {
 }
 
 function renderTicks(props: AxisTickProps, x2: number): JSX.Element {
-    const tickLabels: string[] = generateAxisLabels(props.data, Axis.YAxis);
+    const tickLabels: {
+        dataType: DataType,
+        labels: Array<{index: number, label: string }>,
+    } = generateAxisLabels(props.data, Axis.YAxis);
+
     const range: AxisRange = getYAxisRange(props.data, props.config);
     const interval = range.max - range.min;
     const tickLength = props.config ? props.config.tickLength : 5;
 
     return (
         <g className={styles.YAxis__Ticks}>
-            {tickLabels.map((label: string) => {
+            {tickLabels.labels.map((item: { index: number, label: string }) => {
                 const y1 = (((100 - (props.padding.top + props.padding.bottom))
-                 * (1 - (Number(label) - range.min) / interval)))
+                 * (1 - (Number(item.label) - range.min) / interval)))
                  + props.padding.top;
 
                 return (
-                    <g key={label}>
+                    <g key={item.label}>
                         <line
                             x1={`${x2 - tickLength}%`}
                             y1={`${y1}%`}
@@ -36,10 +41,10 @@ function renderTicks(props: AxisTickProps, x2: number): JSX.Element {
                             stroke={'black'}
                         />
                         <AxisTickLabel
-                            key={`tickText-${label}`}
+                            key={`tickText-${item.label}`}
                             xPos={x2 - tickLength}
                             yPos={y1}
-                            label={Number(label)}
+                            label={item.label}
                             axis={Axis.YAxis}
                         />
                     </g>

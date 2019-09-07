@@ -29,7 +29,7 @@ exports[`YAxis it renders consistently 1`] = `
         />
         <div
           axis={1}
-          label={0}
+          label="0"
           xPos={5}
           yPos={130}
         >
@@ -46,7 +46,7 @@ exports[`YAxis it renders consistently 1`] = `
         />
         <div
           axis={1}
-          label={10}
+          label="10"
           xPos={5}
           yPos={90}
         >
@@ -63,7 +63,7 @@ exports[`YAxis it renders consistently 1`] = `
         />
         <div
           axis={1}
-          label={20}
+          label="20"
           xPos={5}
           yPos={50}
         >
@@ -80,7 +80,7 @@ exports[`YAxis it renders consistently 1`] = `
         />
         <div
           axis={1}
-          label={30}
+          label="30"
           xPos={5}
           yPos={10}
         >
@@ -97,7 +97,7 @@ exports[`YAxis it renders consistently 1`] = `
         />
         <div
           axis={1}
-          label={40}
+          label="40"
           xPos={5}
           yPos={-30}
         >
@@ -138,7 +138,7 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
         />
         <div
           axis={1}
-          label={0}
+          label="0"
           xPos={0}
           yPos={90}
         >
@@ -155,7 +155,7 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
         />
         <div
           axis={1}
-          label={10}
+          label="10"
           xPos={0}
           yPos={67.77777777777777}
         >
@@ -172,7 +172,7 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
         />
         <div
           axis={1}
-          label={20}
+          label="20"
           xPos={0}
           yPos={45.55555555555556}
         >
@@ -189,7 +189,7 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
         />
         <div
           axis={1}
-          label={30}
+          label="30"
           xPos={0}
           yPos={23.33333333333333}
         >
@@ -206,7 +206,7 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
         />
         <div
           axis={1}
-          label={40}
+          label="40"
           xPos={0}
           yPos={1.1111111111111072}
         >
