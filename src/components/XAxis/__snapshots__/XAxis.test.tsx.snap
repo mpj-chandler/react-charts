@@ -1,332 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`XAxis When XAxis has null labels it renders consistently with default tick placement 1`] = `
-<div
-  className="XAxis"
->
-  <svg
-    className="XAxis__Svg"
-  >
-    <line
-      fill="transparent"
-      stroke="black"
-      strokeWidth={1}
-      x1="10%"
-      x2="95%"
-      y1="10%"
-      y2="10%"
-    />
-    <g
-      className="XAxis__Ticks"
-    >
-      <g>
-        <line
-          stroke="black"
-          x1="-30%"
-          x2="-30%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={0}
-          xPos={-30}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="10%"
-          x2="10%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={1}
-          xPos={10}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="50%"
-          x2="50%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={2}
-          xPos={50}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="90%"
-          x2="90%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={3}
-          xPos={90}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="130%"
-          x2="130%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={4}
-          xPos={130}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-    </g>
-  </svg>
-</div>
-`;
-
-exports[`XAxis When XAxis has null labels it renders consistently with explicit bucket tick placement 1`] = `
-<div
-  className="XAxis"
->
-  <svg
-    className="XAxis__Svg"
-  >
-    <line
-      fill="transparent"
-      stroke="black"
-      strokeWidth={1}
-      x1="10%"
-      x2="95%"
-      y1="10%"
-      y2="10%"
-    />
-    <g
-      className="XAxis__Ticks"
-    >
-      <g>
-        <line
-          stroke="black"
-          x1="6.666666666666665%"
-          x2="6.666666666666665%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={0}
-          xPos={-6.666666666666668}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="36.666666666666664%"
-          x2="36.666666666666664%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={1}
-          xPos={23.333333333333332}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="66.66666666666667%"
-          x2="66.66666666666667%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={2}
-          xPos={53.33333333333334}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="96.66666666666669%"
-          x2="96.66666666666669%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={3}
-          xPos={83.33333333333334}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="126.66666666666669%"
-          x2="126.66666666666669%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={4}
-          xPos={113.33333333333334}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-    </g>
-  </svg>
-</div>
-`;
-
-exports[`XAxis When XAxis has null labels it renders consistently with explicit inline tick placement 1`] = `
-<div
-  className="XAxis"
->
-  <svg
-    className="XAxis__Svg"
-  >
-    <line
-      fill="transparent"
-      stroke="black"
-      strokeWidth={1}
-      x1="10%"
-      x2="95%"
-      y1="10%"
-      y2="10%"
-    />
-    <g
-      className="XAxis__Ticks"
-    >
-      <g>
-        <line
-          stroke="black"
-          x1="-30%"
-          x2="-30%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={0}
-          xPos={-30}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="10%"
-          x2="10%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={1}
-          xPos={10}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="50%"
-          x2="50%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={2}
-          xPos={50}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="90%"
-          x2="90%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={3}
-          xPos={90}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="130%"
-          x2="130%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label={4}
-          xPos={130}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-    </g>
-  </svg>
-</div>
-`;
-
 exports[`XAxis When XAxis is rendered above the chart it renders consistently with default tick placement 1`] = `
 <div
   className="XAxis"
@@ -344,7 +17,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
       y2="10%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -356,7 +29,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={-30}
           yPos={7.5}
         >
@@ -373,7 +46,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={10}
           yPos={7.5}
         >
@@ -390,7 +63,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={50}
           yPos={7.5}
         >
@@ -407,7 +80,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={90}
           yPos={7.5}
         >
@@ -424,7 +97,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={4}
+          label="4"
           xPos={130}
           yPos={7.5}
         >
@@ -453,7 +126,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
       y2="10%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -465,7 +138,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={-6.666666666666668}
           yPos={7.5}
         >
@@ -482,7 +155,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={23.333333333333332}
           yPos={7.5}
         >
@@ -499,7 +172,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={53.33333333333334}
           yPos={7.5}
         >
@@ -516,7 +189,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={83.33333333333334}
           yPos={7.5}
         >
@@ -533,7 +206,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={4}
+          label="4"
           xPos={113.33333333333334}
           yPos={7.5}
         >
@@ -562,7 +235,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
       y2="10%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -574,7 +247,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={-30}
           yPos={7.5}
         >
@@ -591,7 +264,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={10}
           yPos={7.5}
         >
@@ -608,7 +281,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={50}
           yPos={7.5}
         >
@@ -625,7 +298,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={90}
           yPos={7.5}
         >
@@ -642,7 +315,7 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
         />
         <div
           axis={0}
-          label={4}
+          label="4"
           xPos={130}
           yPos={7.5}
         >
@@ -671,7 +344,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
       y2="130%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -683,7 +356,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         />
         <div
           axis={0}
-          label={-3}
+          label="-3"
           xPos={10}
           yPos={135}
         >
@@ -700,7 +373,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={50}
           yPos={135}
         >
@@ -717,7 +390,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={90}
           yPos={135}
         >
@@ -734,7 +407,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={130}
           yPos={135}
         >
@@ -763,7 +436,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
       y2="130%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -775,7 +448,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-3}
+          label="-3"
           xPos={23.33333333333334}
           yPos={135}
         >
@@ -792,7 +465,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={53.33333333333334}
           yPos={135}
         >
@@ -809,7 +482,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={83.33333333333334}
           yPos={135}
         >
@@ -826,7 +499,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={113.33333333333334}
           yPos={135}
         >
@@ -855,7 +528,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
       y2="130%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -867,7 +540,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-3}
+          label="-3"
           xPos={10}
           yPos={135}
         >
@@ -884,7 +557,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={50}
           yPos={135}
         >
@@ -901,7 +574,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={90}
           yPos={135}
         >
@@ -918,7 +591,7 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={130}
           yPos={135}
         >
@@ -947,7 +620,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
       y2="130%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -959,7 +632,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={10}
           yPos={135}
         >
@@ -976,7 +649,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={50}
           yPos={135}
         >
@@ -993,7 +666,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={90}
           yPos={135}
         >
@@ -1010,7 +683,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={130}
           yPos={135}
         >
@@ -1039,7 +712,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
       y2="130%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -1051,7 +724,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={23.333333333333332}
           yPos={135}
         >
@@ -1068,7 +741,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={53.33333333333334}
           yPos={135}
         >
@@ -1085,7 +758,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={83.33333333333334}
           yPos={135}
         >
@@ -1102,7 +775,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={113.33333333333334}
           yPos={135}
         >
@@ -1131,7 +804,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
       y2="130%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -1143,7 +816,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={10}
           yPos={135}
         >
@@ -1160,7 +833,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={50}
           yPos={135}
         >
@@ -1177,7 +850,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={90}
           yPos={135}
         >
@@ -1194,7 +867,7 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={130}
           yPos={135}
         >
@@ -1223,7 +896,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       y2="130%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -1235,7 +908,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={10}
           yPos={135}
         >
@@ -1252,7 +925,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={30}
           yPos={135}
         >
@@ -1269,7 +942,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={50}
           yPos={135}
         >
@@ -1286,7 +959,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={70}
           yPos={135}
         >
@@ -1303,7 +976,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={90}
           yPos={135}
         >
@@ -1320,7 +993,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={110}
           yPos={135}
         >
@@ -1349,7 +1022,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       y2="130%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -1361,7 +1034,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={23.333333333333332}
           yPos={135}
         >
@@ -1378,7 +1051,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={38.333333333333336}
           yPos={135}
         >
@@ -1395,7 +1068,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={53.33333333333334}
           yPos={135}
         >
@@ -1412,7 +1085,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={68.33333333333334}
           yPos={135}
         >
@@ -1429,7 +1102,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={83.33333333333334}
           yPos={135}
         >
@@ -1446,7 +1119,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={98.33333333333334}
           yPos={135}
         >
@@ -1475,7 +1148,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
       y2="130%"
     />
     <g
-      className="XAxis__Ticks"
+      className="XAxisTicks"
     >
       <g>
         <line
@@ -1487,7 +1160,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-2}
+          label="-2"
           xPos={10}
           yPos={135}
         >
@@ -1504,7 +1177,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={-1}
+          label="-1"
           xPos={30}
           yPos={135}
         >
@@ -1521,7 +1194,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={0}
+          label="0"
           xPos={50}
           yPos={135}
         >
@@ -1538,7 +1211,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={1}
+          label="1"
           xPos={70}
           yPos={135}
         >
@@ -1555,7 +1228,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={2}
+          label="2"
           xPos={90}
           yPos={135}
         >
@@ -1572,7 +1245,7 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
         />
         <div
           axis={0}
-          label={3}
+          label="3"
           xPos={110}
           yPos={135}
         >

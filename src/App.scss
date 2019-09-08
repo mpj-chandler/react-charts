@@ -35,10 +35,17 @@
     align-content: center;
   }
 
-
   &__ThirdChartContainer {
     text-align: center;
     grid-area: bottom-left;
+    border: 1px solid grey;
+    border-radius: 0.25rem;
+    align-content: center;
+  }
+
+  &__FourthChartContainer {
+    text-align: center;
+    grid-area: bottom-right;
     border: 1px solid grey;
     border-radius: 0.25rem;
     align-content: center;

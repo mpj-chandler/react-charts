@@ -7,7 +7,7 @@ import { ProgressPlugin } from 'webpack';
 
 describe('Axis Text Label', () => {
 
-    const label: number = 123456;
+    const label: string = '123456';
 
     const mockGetBBox = jest.fn().mockImplementation(() => {
         return {
@@ -65,7 +65,7 @@ describe('Axis Text Label', () => {
 
             component = TestRenderer.create(
                 <AxisTickLabel
-                    label={123456789}
+                    label={'123456789'}
                     xPos={0}
                     yPos={0}
                     axis={Axis.XAxis}
@@ -114,7 +114,7 @@ describe('Axis Text Label', () => {
 
             component = TestRenderer.create(
                 <AxisTickLabel
-                    label={123456789}
+                    label={'123456789'}
                     xPos={0}
                     yPos={0}
                     axis={Axis.XAxis}

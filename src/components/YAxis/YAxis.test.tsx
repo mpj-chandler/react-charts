@@ -1,8 +1,9 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 import YAxis from './YAxis';
-import { AxisProps, AxisConfig } from '../BarChart/types';
 import Placement from '../../enums/Placement';
+import { AxisProps, AxisConfig } from '../../__types__/axisTypes';
+import DataType from '../../enums/DataType';
 
 
 jest.mock('../AxisTickLabel/AxisTickLabel');
@@ -13,18 +14,22 @@ describe('YAxis', () => {
         data: [
             {
                 seriesName: 'A',
+                type: {
+                    x: DataType.NonNullNumeric,
+                    y: DataType.NonNullNumeric,
+                },
                 points: [
                     {
                         x: 0,
-                        y: 10
+                        y: 10,
                     },
                     {
                         x: 1,
-                        y: 20
+                        y: 20,
                     },
                     {
                         x: 2,
-                        y: 30
+                        y: 30,
                     }
                 ]
             }
@@ -51,7 +56,7 @@ describe('YAxis', () => {
     });
 
     it('it renders consistently with an explicit config', () => {
-        const component = TestRenderer.create(<YAxis {...props} config={{ }}/>);
+        const component = TestRenderer.create(<YAxis {...props} config={config}/>);
 
         expect(component.toJSON()).toMatchSnapshot();
     });

@@ -1,8 +1,13 @@
-import { SeriesData } from '../../../components/BarChart/types';
+import { SeriesData } from "../../../__types__/seriesTypes";
+import DataType from "../../../enums/DataType";
 
 export const data: SeriesData[] = [
     {
         seriesName: 'test-series-1',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: 0,
@@ -24,6 +29,10 @@ export const data: SeriesData[] = [
     },
     {
         seriesName: 'test-series-2',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: 0,
@@ -45,6 +54,10 @@ export const data: SeriesData[] = [
     },
     {
         seriesName: 'test-series-2',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: 0,
@@ -68,6 +81,10 @@ export const data: SeriesData[] = [
 
 const nullEntry: SeriesData = {
     seriesName: 'test-series-3',
+    type: {
+        x: DataType.NonNullNumeric,
+        y: DataType.NonNullNumeric,
+    },
     points: [
         {
             x: null,
@@ -93,6 +110,10 @@ export const partiallyNullData: SeriesData[] = [ ...data, nullEntry ];
 export const malformedData: SeriesData[] = [
     {
         seriesName: 'test-series-1',
+        type: {
+            x: DataType.NonNullNumeric,
+            y: DataType.NonNullNumeric,
+        },
         points: [
             {
                 x: null,

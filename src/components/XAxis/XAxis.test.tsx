@@ -1,8 +1,9 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 import XAxis from './XAxis';
-import { AxisConfig, AxisProps } from '../BarChart/types';
 import Placement from '../../enums/Placement';
+import DataType from '../../enums/DataType';
+import { AxisProps, AxisConfig } from '../../__types__/axisTypes';
 
 jest.mock('../AxisTickLabel/AxisTickLabel');
 
@@ -13,6 +14,10 @@ describe('XAxis', () => {
             data: [
                 {
                     seriesName: 'A',
+                    type: {
+                        x: DataType.NonNullNumeric,
+                        y: DataType.NonNullNumeric,
+                    },
                     points: [
                         {
                             x: 0,
@@ -73,6 +78,10 @@ describe('XAxis', () => {
             data: [
                 {
                     seriesName: 'A',
+                    type: {
+                        x: DataType.NonNullNumeric,
+                        y: DataType.NonNullNumeric,
+                    },
                     points: [
                         {
                             x: -3,
@@ -133,6 +142,10 @@ describe('XAxis', () => {
             data: [
                 {
                     seriesName: 'A',
+                    type: {
+                        x: DataType.NonNullNumeric,
+                        y: DataType.NonNullNumeric,
+                    },
                     points: [
                         {
                             x: -2,
@@ -193,6 +206,10 @@ describe('XAxis', () => {
             data: [
                 {
                     seriesName: 'A',
+                    type: {
+                        x: DataType.NonNullNumeric,
+                        y: DataType.NonNullNumeric,
+                    },
                     points: [
                         {
                             x: 1,

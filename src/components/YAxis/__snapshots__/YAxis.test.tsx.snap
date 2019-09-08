@@ -29,7 +29,7 @@ exports[`YAxis it renders consistently 1`] = `
         />
         <div
           axis={1}
-          label={0}
+          label="0"
           xPos={5}
           yPos={130}
         >
@@ -46,7 +46,7 @@ exports[`YAxis it renders consistently 1`] = `
         />
         <div
           axis={1}
-          label={10}
+          label="10"
           xPos={5}
           yPos={90}
         >
@@ -63,7 +63,7 @@ exports[`YAxis it renders consistently 1`] = `
         />
         <div
           axis={1}
-          label={20}
+          label="20"
           xPos={5}
           yPos={50}
         >
@@ -80,7 +80,7 @@ exports[`YAxis it renders consistently 1`] = `
         />
         <div
           axis={1}
-          label={30}
+          label="30"
           xPos={5}
           yPos={10}
         >
@@ -97,7 +97,7 @@ exports[`YAxis it renders consistently 1`] = `
         />
         <div
           axis={1}
-          label={40}
+          label="40"
           xPos={5}
           yPos={-30}
         >
@@ -131,32 +131,15 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
       <g>
         <line
           stroke="black"
-          x1="NaN%"
-          x2="10%"
-          y1="130%"
-          y2="130%"
-        />
-        <div
-          axis={1}
-          label={0}
-          xPos={NaN}
-          yPos={130}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="NaN%"
+          x1="0%"
           x2="10%"
           y1="90%"
           y2="90%"
         />
         <div
           axis={1}
-          label={10}
-          xPos={NaN}
+          label="0"
+          xPos={0}
           yPos={90}
         >
           MockAxisTickLabel 
@@ -165,16 +148,16 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
       <g>
         <line
           stroke="black"
-          x1="NaN%"
+          x1="0%"
           x2="10%"
-          y1="50%"
-          y2="50%"
+          y1="67.77777777777777%"
+          y2="67.77777777777777%"
         />
         <div
           axis={1}
-          label={20}
-          xPos={NaN}
-          yPos={50}
+          label="10"
+          xPos={0}
+          yPos={67.77777777777777}
         >
           MockAxisTickLabel 
         </div>
@@ -182,16 +165,16 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
       <g>
         <line
           stroke="black"
-          x1="NaN%"
+          x1="0%"
           x2="10%"
-          y1="10%"
-          y2="10%"
+          y1="45.55555555555556%"
+          y2="45.55555555555556%"
         />
         <div
           axis={1}
-          label={30}
-          xPos={NaN}
-          yPos={10}
+          label="20"
+          xPos={0}
+          yPos={45.55555555555556}
         >
           MockAxisTickLabel 
         </div>
@@ -199,16 +182,33 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
       <g>
         <line
           stroke="black"
-          x1="NaN%"
+          x1="0%"
           x2="10%"
-          y1="-30%"
-          y2="-30%"
+          y1="23.33333333333333%"
+          y2="23.33333333333333%"
         />
         <div
           axis={1}
-          label={40}
-          xPos={NaN}
-          yPos={-30}
+          label="30"
+          xPos={0}
+          yPos={23.33333333333333}
+        >
+          MockAxisTickLabel 
+        </div>
+      </g>
+      <g>
+        <line
+          stroke="black"
+          x1="0%"
+          x2="10%"
+          y1="1.1111111111111072%"
+          y2="1.1111111111111072%"
+        />
+        <div
+          axis={1}
+          label="40"
+          xPos={0}
+          yPos={1.1111111111111072}
         >
           MockAxisTickLabel 
         </div>

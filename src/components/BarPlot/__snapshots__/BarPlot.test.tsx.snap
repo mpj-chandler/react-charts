@@ -8,6 +8,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={0}
       fill="red"
+      index={0}
       numBars={3}
       padding={
         Object {
@@ -24,6 +25,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -43,6 +45,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={0}
       fill="red"
+      index={1}
       numBars={3}
       padding={
         Object {
@@ -59,6 +62,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -78,6 +82,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={0}
       fill="red"
+      index={2}
       numBars={3}
       padding={
         Object {
@@ -94,6 +99,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -122,6 +128,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={0}
       fill="red"
+      index={0}
       numBars={3}
       padding={
         Object {
@@ -138,6 +145,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -157,6 +165,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={0}
       fill="red"
+      index={1}
       numBars={3}
       padding={
         Object {
@@ -173,6 +182,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -192,6 +202,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={0}
       fill="red"
+      index={2}
       numBars={3}
       padding={
         Object {
@@ -208,6 +219,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -236,6 +248,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={0}
       fill="red"
+      index={0}
       numBars={3}
       padding={
         Object {
@@ -252,6 +265,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -271,6 +285,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={0}
       fill="red"
+      index={1}
       numBars={3}
       padding={
         Object {
@@ -287,6 +302,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -306,6 +322,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={0}
       fill="red"
+      index={2}
       numBars={3}
       padding={
         Object {
@@ -322,6 +339,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -350,6 +368,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={1}
       fill="red"
+      index={0}
       numBars={3}
       padding={
         Object {
@@ -366,6 +385,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -385,6 +405,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={1}
       fill="red"
+      index={1}
       numBars={3}
       padding={
         Object {
@@ -401,6 +422,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -420,6 +442,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={1}
       fill="red"
+      index={2}
       numBars={3}
       padding={
         Object {
@@ -436,6 +459,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -464,6 +488,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={1}
       fill="red"
+      index={0}
       numBars={3}
       padding={
         Object {
@@ -480,6 +505,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -499,6 +525,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={1}
       fill="red"
+      index={1}
       numBars={3}
       padding={
         Object {
@@ -515,6 +542,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -534,6 +562,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
     <div
       barAlignment={1}
       fill="red"
+      index={2}
       numBars={3}
       padding={
         Object {
@@ -550,6 +579,7 @@ exports[`BarPlot When all data points are non-null it renders consistently with 
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -578,6 +608,7 @@ exports[`BarPlot When some data points are null it renders consistently with def
     <div
       barAlignment={0}
       fill="red"
+      index={2}
       numBars={3}
       padding={
         Object {
@@ -594,6 +625,7 @@ exports[`BarPlot When some data points are null it renders consistently with def
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -622,6 +654,7 @@ exports[`BarPlot When some data points are null it renders consistently with tic
     <div
       barAlignment={0}
       fill="red"
+      index={2}
       numBars={3}
       padding={
         Object {
@@ -638,6 +671,7 @@ exports[`BarPlot When some data points are null it renders consistently with tic
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -666,6 +700,7 @@ exports[`BarPlot When some data points are null it renders consistently with tic
     <div
       barAlignment={0}
       fill="red"
+      index={2}
       numBars={3}
       padding={
         Object {
@@ -682,6 +717,7 @@ exports[`BarPlot When some data points are null it renders consistently with tic
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -710,6 +746,7 @@ exports[`BarPlot When some data points are null it renders consistently with tic
     <div
       barAlignment={1}
       fill="red"
+      index={2}
       numBars={3}
       padding={
         Object {
@@ -726,6 +763,7 @@ exports[`BarPlot When some data points are null it renders consistently with tic
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
@@ -754,6 +792,7 @@ exports[`BarPlot When some data points are null it renders consistently with tic
     <div
       barAlignment={1}
       fill="red"
+      index={2}
       numBars={3}
       padding={
         Object {
@@ -770,6 +809,7 @@ exports[`BarPlot When some data points are null it renders consistently with tic
         }
       }
       stroke="black"
+      type="NON_NULL_NUMERIC"
       width={10}
       xRange={
         Object {
