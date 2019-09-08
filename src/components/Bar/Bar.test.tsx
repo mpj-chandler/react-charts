@@ -153,7 +153,7 @@ describe('Bar', () => {
             it('it renders consistently with defaults', () => {
                 const component = TestRenderer.create(<Bar {...props}/>);
 
-                jest.runAllTimers();
+                jest.advanceTimersByTime(1000);
 
                 expect(component.toJSON()).toMatchSnapshot();
             });

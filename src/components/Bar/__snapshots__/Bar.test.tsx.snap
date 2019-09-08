@@ -58,11 +58,11 @@ exports[`Bar When dealing with named data types When all values on the yAxis are
 exports[`Bar When dealing with named data types When all values on the yAxis are positive it renders consistently with defaults 1`] = `
 <rect
   fill="anything"
-  height="32.82200820660031%"
+  height="0%"
   stroke="anything"
   width="100%"
   x="-39.2%"
-  y="57.17799179339969%"
+  y="90%"
 />
 `;
 
