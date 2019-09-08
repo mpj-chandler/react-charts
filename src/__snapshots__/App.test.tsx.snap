@@ -152,6 +152,27 @@ exports[`App it renders consistently 1`] = `
               "y": "NON_NULL_NUMERIC",
             },
           },
+          Object {
+            "points": Array [
+              Object {
+                "x": 0,
+                "y": -30,
+              },
+              Object {
+                "x": 1,
+                "y": 20,
+              },
+              Object {
+                "x": 2,
+                "y": 60,
+              },
+            ],
+            "seriesName": "B",
+            "type": Object {
+              "x": "NON_NULL_NUMERIC",
+              "y": "NON_NULL_NUMERIC",
+            },
+          },
         ]
       }
       padding={
@@ -205,6 +226,48 @@ exports[`App it renders consistently 1`] = `
               },
             ],
             "seriesName": "A",
+            "type": Object {
+              "x": "NAMED",
+              "y": "NON_NULL_NUMERIC",
+            },
+          },
+          Object {
+            "points": Array [
+              Object {
+                "x": "Anything",
+                "y": -50,
+              },
+              Object {
+                "x": "Belongs",
+                "y": 30,
+              },
+              Object {
+                "x": "Conservatory",
+                "y": 10,
+              },
+            ],
+            "seriesName": "B",
+            "type": Object {
+              "x": "NAMED",
+              "y": "NON_NULL_NUMERIC",
+            },
+          },
+          Object {
+            "points": Array [
+              Object {
+                "x": "Anything",
+                "y": 50,
+              },
+              Object {
+                "x": "Belongs",
+                "y": -30,
+              },
+              Object {
+                "x": "Conservatory",
+                "y": 20,
+              },
+            ],
+            "seriesName": "C",
             "type": Object {
               "x": "NAMED",
               "y": "NON_NULL_NUMERIC",

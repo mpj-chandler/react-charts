@@ -113,6 +113,27 @@ const App: React.FC<AppProps> = (props) => {
                     },
                 ],
             },
+            {
+                seriesName: 'B',
+                type: {
+                    x: DataType.NonNullNumeric,
+                    y: DataType.NonNullNumeric,
+                },
+                points: [
+                    {
+                        x: 0,
+                        y: -30,
+                    },
+                    {
+                        x: 1,
+                        y: 20,
+                    },
+                    {
+                        x: 2,
+                        y: 60,
+                    },
+                ],
+            },
         ],
         padding: { left: 10, right: 10, top: 10, bottom: 10 },
         xAxisConfig: {
@@ -150,6 +171,48 @@ const App: React.FC<AppProps> = (props) => {
                     {
                         x: 'Conservatory',
                         y: -30,
+                    },
+                ],
+            },
+            {
+                seriesName: 'B',
+                type: {
+                    x: DataType.Named,
+                    y: DataType.NonNullNumeric,
+                },
+                points: [
+                    {
+                        x: 'Anything',
+                        y: -50,
+                    },
+                    {
+                        x: 'Belongs',
+                        y: 30,
+                    },
+                    {
+                        x: 'Conservatory',
+                        y: 10,
+                    },
+                ],
+            },
+            {
+                seriesName: 'C',
+                type: {
+                    x: DataType.Named,
+                    y: DataType.NonNullNumeric,
+                },
+                points: [
+                    {
+                        x: 'Anything',
+                        y: 50,
+                    },
+                    {
+                        x: 'Belongs',
+                        y: -30,
+                    },
+                    {
+                        x: 'Conservatory',
+                        y: 20,
                     },
                 ],
             },

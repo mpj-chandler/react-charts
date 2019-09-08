@@ -32,3 +32,13 @@ export interface SeriesData {
     };
     points: Array<NamedDataPoint | DateIndexedDataPoint | NumericDataPoint | NonNullNumericDataPoint>;
 }
+
+export interface SeriesConfig {
+    numSeries: number,
+    seriesIndex: number,
+    padding: Padding,
+    dataType: DataType,
+    xRange: AxisRange,
+    yRange: any,
+    placement: Placement
+}
