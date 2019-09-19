@@ -43,7 +43,7 @@ function generateScaledNumericAxisLabels(seriesData: SeriesData[], axis: Axis): 
     }
     let currentValue: number = firstTickValue;
 
-    while (currentValue <= range.max + tickInterval) {
+    while (currentValue < range.max + tickInterval) {
         labels.push({ index, label: currentValue.toFixed(decimals) });
         currentValue += tickInterval;
         index += 1;

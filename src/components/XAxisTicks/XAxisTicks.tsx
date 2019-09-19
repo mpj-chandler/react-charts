@@ -15,11 +15,13 @@ export function renderTick(
     y1: number,
     props: AxisTickProps,
     textXPos: number,
-    tickLength: number = 5) {
+    index: number,
+    tickLength: number = 5,
+    ) {
     const y2 = y1 === props.padding.top ? y1 - tickLength / 2 : y1 + tickLength;
 
     return (
-        <g key={`tickGroup-${label}`}>
+        <g key={`tickGroup-${label}-${index}`}>
             <line
                 key={`tickLine-${label}`}
                 x1={`${x1}%`}
@@ -49,11 +51,11 @@ const XAxisTicks: React.FC<XAxisTickProps> = (props) => {
         = generateAxisLabels(props.data, Axis.XAxis);
 
     return (<g className={styles.XAxisTicks}>
-        {tickLabels.labels.map((item: { index: number, label: string }) => {
+        {tickLabels.labels.map((item: { index: number, label: string }, index: number) => {
             const x1 = getTickXPosition(props, tickLabels.dataType, item);
             const textXPos = getTickTextXPosition(x1, props, tickLabels.dataType, item);
 
-            return renderTick(item.label, x1, props.y1, props, textXPos);
+            return renderTick(item.label, x1, props.y1, props, textXPos, index);
         })}
     </g>);
 };

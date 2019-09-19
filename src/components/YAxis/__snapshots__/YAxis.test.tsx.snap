@@ -87,23 +87,6 @@ exports[`YAxis it renders consistently 1`] = `
           MockAxisTickLabel 
         </div>
       </g>
-      <g>
-        <line
-          stroke="black"
-          x1="5%"
-          x2="10%"
-          y1="-30%"
-          y2="-30%"
-        />
-        <div
-          axis={1}
-          label="40"
-          xPos={5}
-          yPos={-30}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
     </g>
   </svg>
 </div>
@@ -192,23 +175,6 @@ exports[`YAxis it renders consistently with an explicit config 1`] = `
           label="30"
           xPos={0}
           yPos={23.33333333333333}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="0%"
-          x2="10%"
-          y1="1.1111111111111072%"
-          y2="1.1111111111111072%"
-        />
-        <div
-          axis={1}
-          label="40"
-          xPos={0}
-          yPos={1.1111111111111072}
         >
           MockAxisTickLabel 
         </div>

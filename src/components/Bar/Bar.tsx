@@ -10,7 +10,8 @@ import DataType from '../../enums/DataType';
 export interface BarProps {
     point: NonNullNumericDataPoint | NamedDataPoint | DateIndexedDataPoint;
     index: number;
-    type: DataType;
+    seriesIndex: number;
+    dataType: DataType;
     yRange: AxisRange;
     xRange: AxisRange;
     width: number;
@@ -18,7 +19,8 @@ export interface BarProps {
     stroke: string;
     padding: Padding;
     numBars: number;
-    barAlignment: Placement;
+    numSeries: number;
+    placement: Placement;
 }
 
 function getBarEndingHeight(props: BarProps): number {
@@ -64,7 +66,7 @@ const Bar: React.FC<BarProps> = (props: BarProps) => {
             x={`${x - props.width / 2}%`}
             y={`${getY(animation * height, yStart, props.point.y)}%`}
             height={`${props.point.y < 0 ? -1 * animation * height : animation * height}%`}
-            width={`${props.width}%`}
+            width={`${props.width / props.numSeries}%`}
             fill={props.fill}
             stroke={props.stroke}
         >
