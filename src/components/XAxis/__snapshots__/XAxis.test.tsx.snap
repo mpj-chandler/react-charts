@@ -87,23 +87,6 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
           MockAxisTickLabel 
         </div>
       </g>
-      <g>
-        <line
-          stroke="black"
-          x1="130%"
-          x2="130%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label="4"
-          xPos={130}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
     </g>
   </svg>
 </div>
@@ -191,23 +174,6 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
           axis={0}
           label="3"
           xPos={83.33333333333334}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="126.66666666666669%"
-          x2="126.66666666666669%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label="4"
-          xPos={113.33333333333334}
           yPos={7.5}
         >
           MockAxisTickLabel 
@@ -305,23 +271,6 @@ exports[`XAxis When XAxis is rendered above the chart it renders consistently wi
           MockAxisTickLabel 
         </div>
       </g>
-      <g>
-        <line
-          stroke="black"
-          x1="130%"
-          x2="130%"
-          y1="10%"
-          y2="7.5%"
-        />
-        <div
-          axis={0}
-          label="4"
-          xPos={130}
-          yPos={7.5}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
     </g>
   </svg>
 </div>
@@ -392,23 +341,6 @@ exports[`XAxis When XAxis values are all negative it renders consistently with d
           axis={0}
           label="-1"
           xPos={90}
-          yPos={135}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="130%"
-          x2="130%"
-          y1="130%"
-          y2="135%"
-        />
-        <div
-          axis={0}
-          label="0"
-          xPos={130}
           yPos={135}
         >
           MockAxisTickLabel 
@@ -489,23 +421,6 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
           MockAxisTickLabel 
         </div>
       </g>
-      <g>
-        <line
-          stroke="black"
-          x1="126.66666666666669%"
-          x2="126.66666666666669%"
-          y1="130%"
-          y2="135%"
-        />
-        <div
-          axis={0}
-          label="0"
-          xPos={113.33333333333334}
-          yPos={135}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
     </g>
   </svg>
 </div>
@@ -576,23 +491,6 @@ exports[`XAxis When XAxis values are all negative it renders consistently with e
           axis={0}
           label="-1"
           xPos={90}
-          yPos={135}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="130%"
-          x2="130%"
-          y1="130%"
-          y2="135%"
-        />
-        <div
-          axis={0}
-          label="0"
-          xPos={130}
           yPos={135}
         >
           MockAxisTickLabel 
@@ -673,23 +571,6 @@ exports[`XAxis When XAxis values are all positive it renders consistently with d
           MockAxisTickLabel 
         </div>
       </g>
-      <g>
-        <line
-          stroke="black"
-          x1="130%"
-          x2="130%"
-          y1="130%"
-          y2="135%"
-        />
-        <div
-          axis={0}
-          label="3"
-          xPos={130}
-          yPos={135}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
     </g>
   </svg>
 </div>
@@ -765,23 +646,6 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
           MockAxisTickLabel 
         </div>
       </g>
-      <g>
-        <line
-          stroke="black"
-          x1="126.66666666666669%"
-          x2="126.66666666666669%"
-          y1="130%"
-          y2="135%"
-        />
-        <div
-          axis={0}
-          label="3"
-          xPos={113.33333333333334}
-          yPos={135}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
     </g>
   </svg>
 </div>
@@ -852,23 +716,6 @@ exports[`XAxis When XAxis values are all positive it renders consistently with e
           axis={0}
           label="2"
           xPos={90}
-          yPos={135}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="130%"
-          x2="130%"
-          y1="130%"
-          y2="135%"
-        />
-        <div
-          axis={0}
-          label="3"
-          xPos={130}
           yPos={135}
         >
           MockAxisTickLabel 
@@ -983,23 +830,6 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
           MockAxisTickLabel 
         </div>
       </g>
-      <g>
-        <line
-          stroke="black"
-          x1="110%"
-          x2="110%"
-          y1="130%"
-          y2="135%"
-        />
-        <div
-          axis={0}
-          label="3"
-          xPos={110}
-          yPos={135}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
     </g>
   </svg>
 </div>
@@ -1109,23 +939,6 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
           MockAxisTickLabel 
         </div>
       </g>
-      <g>
-        <line
-          stroke="black"
-          x1="111.66666666666669%"
-          x2="111.66666666666669%"
-          y1="130%"
-          y2="135%"
-        />
-        <div
-          axis={0}
-          label="3"
-          xPos={98.33333333333334}
-          yPos={135}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
     </g>
   </svg>
 </div>
@@ -1230,23 +1043,6 @@ exports[`XAxis When XAxis values span negative and positive values it renders co
           axis={0}
           label="2"
           xPos={90}
-          yPos={135}
-        >
-          MockAxisTickLabel 
-        </div>
-      </g>
-      <g>
-        <line
-          stroke="black"
-          x1="110%"
-          x2="110%"
-          y1="130%"
-          y2="135%"
-        />
-        <div
-          axis={0}
-          label="3"
-          xPos={110}
           yPos={135}
         >
           MockAxisTickLabel 
