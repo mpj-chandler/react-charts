@@ -1,15 +1,14 @@
 import React from 'react';
+import { BarChart, DataType, Placement } from 'react-hooks-bar-chart';
 import styles from './App.scss';
-import BarChart, { BarChartProps } from './components/BarChart/BarChart';
-import Placement from './enums/Placement';
-import DataType from './enums/DataType';
+
 
 interface AppProps {
 
 }
 
 const App: React.FC<AppProps> = (props) => {
-    const firstBarChartProps: BarChartProps = {
+    const firstBarChartProps = {
         title: 'My first bar chart',
         data: [
             {
@@ -49,7 +48,7 @@ const App: React.FC<AppProps> = (props) => {
         },
     };
 
-    const secondBarChartProps: BarChartProps = {
+    const secondBarChartProps = {
         title: 'My second bar chart',
         data: [
             {
@@ -89,7 +88,7 @@ const App: React.FC<AppProps> = (props) => {
         },
     };
 
-    const thirdBarChartProps: BarChartProps = {
+    const thirdBarChartProps = {
         title: 'My third bar chart',
         data: [
             {
@@ -150,7 +149,7 @@ const App: React.FC<AppProps> = (props) => {
         },
     };
 
-    const fourthBarChartProps: BarChartProps = {
+    const fourthBarChartProps = {
         title: 'My fourth bar chart',
         data: [
             {
