@@ -7287,9 +7287,9 @@ react-dom@^16.8.6:
     scheduler "^0.16.1"
 
 react-hooks-bar-chart@^0.4.2:
-  version "0.4.32"
-  resolved "https://registry.yarnpkg.com/react-hooks-bar-chart/-/react-hooks-bar-chart-0.4.32.tgz#28c3c734323221b502f9e3281c0f0f7ce39bb1ff"
-  integrity sha512-ZXXlW5qpCshjDprWWWDoFbq54V1U2hSCHBa1JL8HOYdQ1M6epn7eH7Yb7bQ+U+axla7ilHkE+HrQyinrgSbHbw==
+  version "0.4.36"
+  resolved "https://registry.yarnpkg.com/react-hooks-bar-chart/-/react-hooks-bar-chart-0.4.36.tgz#f99163132e09d50c7667eb3556a0a83859b1b8b7"
+  integrity sha512-HpClzZxc/QZIfRqqKixNzV3sbkhxZx9BCrWHz8KDbqZb1LzrHbsEY2fQaWGI64uk1fkwaS0YWoMUfmaa25KjpQ==
 
 react-hot-loader@^4.12.3:
   version "4.12.14"

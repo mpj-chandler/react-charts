@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, DataType, Placement } from 'react-hooks-bar-chart';
+import ReactHooksBarChart, { BarChart, DataType, Placement } from 'react-hooks-bar-chart';
 import styles from './App.scss';
 
 
